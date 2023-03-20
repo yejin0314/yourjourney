@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.swiper-wrapper {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.gallery_inner {
+	width: 100%;
+	overflow: hidden;
+	bottom: 10%;
+}
+
+.gallery .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+/* 갤러리 왼쪽 텍스트 */
+.gallery_txt li:nth-child(1) {
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	padding-top: 60px;
+}
+
+.gallery_txt li:nth-child(2) {
+	font-size: 35px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.gallery_txt li:nth-child(3) {
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	padding-bottom: 50px;
+}
+
+.gallery_txt li:nth-child(4) {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* 상품 텍스트(하얀박스) */
+.txtbox{
+	height: 200px;
+	box-sizing: border-box;
+}
+.txtbox li:nth-child(1){
+	color: #363636;
+	font-size: 18px;
+	font-weight: 700;
+
+}
+.txtbox li:nth-child(2){
+	color: #6d6d6d;
+	font-size: 14px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.txtbox li:nth-child(3){
+	color: #000;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next{
+	width: 56px;
+	height: 56px;
+	top: 80%;
+}
+.gallery .swiper-button-prev{
+	left: 40px;
+}
+.gallery .swiper-button-next{
+	left: 120px;
+}
+.gallery .swiper-button-prev:after,
+.gallery .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gallery .swiper-button-prev:after{
+	background: url(../sub1images/btn_left.png);
+}
+.gallery .swiper-button-next:after{
+	background: url(../sub1images/btn_right.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery .swiper-pagination-bullet {
+	background: #fff;
+	width: 8px;
+	height: 8px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery .swiper-horizontal>.swiper-pagination-bullets,
+.gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0;
+}

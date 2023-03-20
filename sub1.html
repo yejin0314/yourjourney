@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./mainimages/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>유어저니</title>
+  <link rel="stylesheet" href="./sub1.css">
+  <!-- 일자선택 -->
+  <link rel="stylesheet" href="./sub1css/sub1popup.css">
+  <link rel="stylesheet" href="./sub1css/datepicker.min.css"> <!-- 여행일 예약 -->
+  <!-- 나라별 탭 -->
+  <link rel="stylesheet" href="./sub1css/sub1tab.css">
+  <!-- 이벤트 갤러리 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /><!--수정X-->
+  <link rel="stylesheet" href="./sub1css/sub1gallery2.css">
+  <!-- 베스트 갤러리 -->
+  <link rel="stylesheet" href="./sub1css/sub1gallery.css">
+
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div class="nav1">
+        <ul>
+          <a href="#">
+            <li><img src="./mainimages/logo.png" alt="로고 이미지"></li>
+          </a>
+          <li><a href="#">해외여행</a>
+            <div class="sub"><!--서브메뉴 배경-->
+              <div>
+                <ul>
+                  <li><a href="#">유럽/아프리카</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">동남아</a></li>
+                  <li><a href="#">괌/사이판/호주/뉴질랜드</a></li>
+                  <li><a href="#">중앙아시아/몽골</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">국내여행</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">제주도</a></li>
+                  <li><a href="#">울릉도</a></li>
+                  <li><a href="#">홍도/흑산도</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">항공</a></li>
+          <li><a href="#">허니문</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">몰디브</a></li>
+                  <li><a href="#">하와이</a></li>
+                  <li><a href="#">칸쿤</a></li>
+                  <li><a href="#">모리셔스</a></li>
+                  <li><a href="#">푸켓/코사무이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">골프</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">베트남</a></li>
+                  <li><a href="#">태국</a></li>
+                  <li><a href="#">필리핀</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">괌/사이판/하와이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">예약/확인 결제</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <ul class="search">
+          <li><input type="search" placeholder="SEARCH"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 메인배너 -->
+  <div class="mainbanner">
+
+  </div>
+
+  <!-- 일자선택바 -->
+  <div class="book">
+    <a href="#none">
+      <div class="where">
+        <div><img src="./sub1images/locationicon.png" alt="위치아이콘 이미지"></div>
+        <p>어디로 떠나시나요?</p>
+      </div>
+    </a>
+    <a href="#none">
+      <div class="when">
+        <div><img src="./sub1images/calendaricon.png" alt="달력아이콘 이미지"></div>
+        <p>여행일이 어떻게 되시나요?</p>
+      </div>
+    </a>
+  </div>
+  <!-- 팝업 -->
+  <div class="popup_where">
+    <div>
+      <h1>어디로 떠나세요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <p><input type="search" placeholder="검색어를 입력하세요"></p>
+      <div class="where_inner">
+        <ul>
+          <li><a href="#none">유럽/아프리카</a></li>
+          <li><a href="#none">일본</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">중앙아시아/몽골</a></li>
+          <li><a href="#none">괌/사이판/호주/뉴질랜드</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">제주도</a></li>
+          <li><a href="#none">울릉도</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">홍도/흑산도</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">몰디브</a></li>
+          <li><a href="#none">하와이</a></li>
+          <li><a href="#none">칸쿤</a></li>
+          <li><a href="#none">모리셔스</a></li>
+          <li><a href="#none">푸켓/코사무이</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">베트남</a></li>
+          <li><a href="#none">태국</a></li>
+          <li><a href="#none">필리핀</a></li>
+          <li><a href="#none">일본</a></li>
+        </ul>
+      </div>
+      <ul class="where_black">
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">일정과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup_when">
+    <div>
+      <h1>여행일이 어떻게 되시나요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <div class="when_inner">
+        <ul class="date">
+          <li>
+            <h2>출발</h2>
+            <input id="datepicker1" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+          <li><img src="./sub1images/line.png" alt="구분바 이미지"></li>
+          <li>
+            <h2>도착</h2>
+            <input id="datepicker2" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+        </ul>
+      </div>
+
+      <ul class="when_black">
+        <li><a href="#">날짜 초기화</a></li>
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">지역과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 콘텐츠-나라별 -->
+  <div class="country">
+    <h1><span>나라별</span>로 고르는 유어저니</h1>
+  </div>
+  <!--tab-->
+  <div class="tab">
+    <ul class="tabnav">
+      <li><a href="#tab01">유럽/아프리카</a></li>
+      <li><a href="#tab02">일본</a></li>
+      <li><a href="#tab03">동남아</a></li>
+      <li><a href="#tab04">괌/사이판/호주/뉴질랜드</a></li>
+      <li><a href="#tab05">중앙아시아/몽골</a></li>
+    </ul>
+    <div class="tabcontent">
+      <!-- 탭1 -->
+      <div id="tab01">
+        <!-- 유럽/아프리카 -->
+        <ul class="country_inner e">
+          <li><a href="#none"><img src="./sub1images/e_country1.jpg" alt="테마별 여행지 유럽 이미지1">
+              <div class="country_txt">
+                <ul>
+                  <li>[스페인/포르투갈 11일] <br>
+                    #가우디투어 #몬세라트케이블카<br>
+                    #포르투 #세고비아 </li>
+                  <li>스페인 필수 10가지 현지식과 함께 즐기는 여행</li>
+                  <li>2,899,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/e_country2.jpg" alt="테마별 여행지 유럽 이미지2">
+              <div class="country_txt">
+                <ul>
+                  <li>[이탈리아 정통 일주 8~9일]<br>
+                    #나폴리 #피렌체 #폼페이<br>
+                    #소렌토 #로마</li>
+                  <li>전통 이탈리아 상품으로 구성된 베스트셀러</li>
+                  <li>2,699,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/e_country3.jpg" alt="테마별 여행지 유럽 이미지3">
+              <div class="country_txt">
+                <ul>
+                  <li>[동유럽 3국(오스트리아/체코/헝가리)]<br>
+                    #3일 자유일정<br>
+                    #맛집탐방</li>
+                  <li>핵심 3개국을 중심으로 동유럽을 느끼자</li>
+                  <li>2,790,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/e_country4.jpg" alt="테마별 여행지 유럽 이미지4">
+              <div class="country_txt">
+                <ul>
+                  <li>[서유럽 3국 (프랑스/스위스/이탈리아)]<br>
+                    #9~12일 #베스트셀러<br>
+                    #특별한여행</li>
+                  <li>핵심관광지만으로 돌아보는 서유럽</li>
+                  <li>4,139,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭2 -->
+      <div id="tab02">
+        <!-- 일본 -->
+        <ul class="country_inner j">
+          <li><a href="#none"><img src="./sub1images/j_country1.jpg" alt="테마별 여행지 일본 이미지1">
+              <div class="country_txt">
+                <ul>
+                  <li>[오사카/고베 3~4일] <br>
+                    #기타하마카페거리<br>
+                    #교토산책</li>
+                  <li>특가 가격으로 즐기는 자유 오사카/코베 여행</li>
+                  <li>668,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/j_country2.jpg" alt="테마별 여행지 일본 이미지2">
+              <div class="country_txt">
+                <ul>
+                  <li>[도쿄 3~4일]<br>
+                    #크루즈탑승 #후지산뷰<br>
+                    #도쿄시내</li>
+                  <li>필수 관광지로 구성된 알찬 도쿄 여행</li>
+                  <li>889,900원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/j_country3.jpg" alt="테마별 여행지 일본 이미지3">
+              <div class="country_txt">
+                <ul>
+                  <li>[홋카이도 4일]<br>
+                    #인기온천호텔<br>
+                    #미식여행</li>
+                  <li>삿포로/오타루/도야/노보리베츠 등 핵심 관광 상품</li>
+                  <li>1,153,900원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/j_country4.jpg" alt="테마별 여행지 일본 이미지4">
+              <div class="country_txt">
+                <ul>
+                  <li>[예술의 섬 나오시마/다카마츠 3~4일]<br>
+                    #온천여행<br>
+                    #소도시여행</li>
+                  <li>아름다운 소도시 다카마츠와 나오시마를 여행하다</li>
+                  <li>839,900원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭3 -->
+      <div id="tab03">
+        <!-- 동남아 -->
+        <ul class="country_inner n">
+          <li><a href="#none"><img src="./sub1images/n_country1.jpg" alt="테마별 여행지 동남아 이미지1">
+              <div class="country_txt">
+                <ul>
+                  <li>[나트랑&달랏 5일]
+                    #영원한봄의도시
+                    #베트남가정식 #핵심관광지</li>
+                  <li>다양한 특전과 특가가 포함되어 있는 프로모션 상품</li>
+                  <li>949,900원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/n_country2.jpg" alt="테마별 여행지 동남아 이미지2">
+              <div class="country_txt">
+                <ul>
+                  <li>[다낭/호이안/후에 4~6일]
+                    #후에 당일투어
+                    #후에 1박숙박</li>
+                  <li>다낭 도심과 근교지역의 다양한 매력을 지닌 상품</li>
+                  <li>529,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/n_country3.jpg" alt="테마별 여행지 동남아 이미지3">
+              <div class="country_txt">
+                <ul>
+                  <li>[보라카이 자유여행 4~6일]
+                    #헤난리조트
+                    #항공+호텔 #왕복픽업</li>
+                  <li>인기 리조트 헤난에서 즐기는 보라카이 자유여행</li>
+                  <li>723,200원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/n_country4.jpg" alt="테마별 여행지 동남아 이미지4">
+              <div class="country_txt">
+                <ul>
+                  <li>[치앙마이/치앙라이 5일]
+                    #3色사원 #4성급호텔
+                    #코끼리 먹이주기 체험</li>
+                  <li>치앙마이 및 치앙라이 지역의 핵심을 즐기는 상품</li>
+                  <li>529,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭4 -->
+      <div id="tab04">
+        <!-- 괌/사이판/호주/뉴질랜드 -->
+        <ul class="country_inner g">
+          <li><a href="#none"><img src="./sub1images/g_country1.jpg" alt="테마별 여행지 괌/사이판/호주/뉴질랜드 이미지1">
+              <div class="country_txt">
+                <ul>
+                  <li>[시드니/골드코스트 7일]
+                    #황금빛해변
+                    #오페라하우스 #헬기투어</li>
+                  <li>호주인이 가장 사랑하는 휴양지 골드코스트</li>
+                  <li>2,679,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/g_country2.jpg" alt="테마별 여행지 괌/사이판/호주/뉴질랜드 이미지2">
+              <div class="country_txt">
+                <ul>
+                  <li>[사이판 자유여행 4~6일]
+                    #자유여행 #인기 관광지
+                    #북마리아나의 가장 큰 섬</li>
+                  <li>여유롭고 자유롭게 사이판 여행을 즐기자</li>
+                  <li>713,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/g_country3.jpg" alt="테마별 여행지 괌/사이판/호주/뉴질랜드 이미지3">
+              <div class="country_txt">
+                <ul>
+                  <li>[괌 에어텔 3박 5일]
+                    #홀리데이리조트 #파셜오션뷰
+                    #사랑의 절벽 </li>
+                  <li>인기 홀리데이 리조트에서 즐기는 괌 특가 여행</li>
+                  <li>824,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/g_country4.jpg" alt="테마별 여행지 괌/사이판/호주/뉴질랜드 이미지4">
+              <div class="country_txt">
+                <ul>
+                  <li>[뉴질랜드 남북섬 핵심일주 8일]
+                    #밀포드사운드 #미타이빌리지
+                    #호비튼무비셋트</li>
+                  <li>장엄한 뉴질랜드의 대자연을 마주하다</li>
+                  <li>3,690,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭5 -->
+      <div id="tab05">
+        <!-- 중앙아시아/몽골 -->
+        <ul class="country_inner g">
+          <li><a href="#none"><img src="./sub1images/m_country1.jpg" alt="테마별 여행지 중앙아시아/몽골 이미지1">
+              <div class="country_txt">
+                <ul>
+                  <li>[신규취항특가_홍콩 4일]
+                    #ALL포함 #홍콩음식정복
+                    #홍콩에서꼭해야할모든것</li>
+                  <li>핵심명소 깊게보기! 홍콩 대표음식 맛보기!</li>
+                  <li>849,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/m_country2.jpg" alt="테마별 여행지 중앙아시아/몽골 이미지2">
+              <div class="country_txt">
+                <ul>
+                  <li>[신규취항특가_홍콩 4일]
+                    #베스트셀러#실속여행
+                    #홍콩깊게보기</li>
+                  <li>홍콩의 핵심 명소를 한 번에 여행해보세요</li>
+                  <li>769,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/m_country3.jpg" alt="테마별 여행지 중앙아시아/몽골 이미지3">
+              <div class="country_txt">
+                <ul>
+                  <li>[우즈베키스탄 5일]
+                    #특가로 떠나는 실속여행
+                    #타슈켄트 #사마르칸트</li>
+                  <li>화려하고 찬란했던 실크로드 고대도시 속으로</li>
+                  <li>1,799,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub1images/m_country4.jpg" alt="테마별 여행지 중앙아시아/몽골 이미지4">
+              <div class="country_txt">
+                <ul>
+                  <li>[몽골/초원사막 5일]
+                    #호텔형신식게르(2인1실)
+                    #초원승마 #미니사막</li>
+                  <li>편안하고 럭셔리하게 몽골을 즐길 수 있는 상품 </li>
+                  <li>1,799,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 대한항공 배너 -->
+  <div class="eventbanner1">
+    <a href="#none"><img src="./sub1images/eventbanner.jpg" alt="대한항공 이벤트 배너 이미지"></a>
+  </div>
+  <!-- 베스트 여행지 -->
+  <div class="best">
+    <div class="best_inner">
+      <div class="gallery_txt">
+        <ul>
+          <li>THIS WEEK</li>
+          <li>유어저니 <br>
+          <li>베스트 여행지</li>
+          </li>
+          <li>지금 바로 인기여행지로 떠나보세요! <br>
+            고객들의 많은 사랑을 받은 베스트 여행지만 모아</li>
+        </ul>
+      </div>
+      <div class="swiper-container gallery">
+        <div class="gallery_inner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best1.jpg" alt="베스트 여행지 이미지1">
+                <div class="txtbox">
+                  <ul>
+                    <li>BASIC 북유럽 4국 9일 <br>
+                      (덴마크/노르웨이/스웨덴/핀란드)</li>
+                    <li>대자연이 만든 걸작 <br>
+                      '피오르드' 북유럽여행의 하이라이트</li>
+                    <li>2,990,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best2.jpg" alt="베스트 여행지 이미지2">
+                <div class="txtbox">
+                  <ul>
+                    <li>[웰컴 투 캐나다] 서부+동부 <br>
+                      항공일주 8박10일</li>
+                    <li>캐나다 빠짐없이 일주하기 <br>
+                      나이아가라 폴스뷰, 빅토리아숙박, 메이플시즌</li>
+                    <li>4,990,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best3.jpg" alt="베스트 여행지 이미지3">
+                <div class="txtbox">
+                  <ul>
+                    <li>[우리의 마음이 춤추기 시작한 순간] <br>
+                      다시, 튀르키예 10일</li>
+                    <li>우즈벡항공 비즈니스 왕복탑승 <br>
+                      전일정특급호텔숙박/10대맛체험/전문인솔자동행 </li>
+                    <li>3,199,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best4.jpg" alt="베스트 여행지 이미지4">
+                <div class="txtbox">
+                  <ul>
+                    <li>[푸켓에서 인생샷] 초특급 리조트 5일,6일 <br>
+                      #힐링마사지 2회 #핫플레이</li>
+                    <li>대형 풀장 보유 5성급 리조트 <br>
+                      산호섬 해변휴양에 시내관광까지!!</li>
+                    <li>749,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best5.jpg" alt="베스트 여행지 이미지5">
+                <div class="txtbox">
+                  <ul>
+                    <li>[부산출발] 동경/오다이바/요코하마 <br>
+                      젊음의거리 3일</li>
+                    <li>동경 빠짐없이 일주하기 <br>
+                      젊음의 거리에서 즐기는 일본여행</li>
+                    <li>749,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/best6.jpg" alt="베스트 여행지 이미지6">
+                <div class="txtbox">
+                  <ul>
+                    <li>[새롭게, 다시 호치민] 3박 5일 <br>
+                      #요정의샘 #레드샌듄</li>
+                    <li>화이트 샌드, 레드샌듄, 요정의샘, <br>
+                      피싱빌리지, 머드온천체험 등 모두 즐기자</li>
+                    <li>699,000원~</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 블릿 버튼 -->
+        <div class="swiper-pagination"></div>
+        <!-- 화살표 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 추천 상품 -->
+  <div class="recommend">
+    <h1>여행전문가들의 <span>'추천상품'</span></h1>
+    <ul>
+      <a href="#none">
+        <li><img src="./sub1images/recommend1.jpg" alt="추천상품 이미지1"></li>
+        <li>[QF연합/두 나라에 빠지다] 도심과 대자연의 <br>
+          호주+뉴질랜드 11일</li>
+        <li>#밀포드사운드#마운트쿡#오페라하우스</li>
+        <li>668,000원 ~</li>
+      </a>
+      <a href="#none">
+        <li><img src="./sub1images/recommend2.jpg" alt="추천상품 이미지2"></li>
+        <li>[스위스의 매력에 퐁당]스위스 일주 8~10일 <br>
+          힐링 알프스를 여유롭게 즐기는 여행</li>
+        <li>#베스트셀러 #알프스여행 #시내호텔</li>
+        <li>3,864,000원 ~</li>
+      </a>
+      <a href="#none">
+        <li><img src="./sub1images/recommend3.jpg" alt="추천상품 이미지3"></li>
+        <li>[원덤 골든베이에서 즐기는 ]다낭 5일 <br>
+          바나힐 테마파크와 호이안의 핵심 관광지</li>
+        <li>#전신마사지 #캔들라이트 디너</li>
+        <li>599,000원 ~</li>
+      </a>
+      <a href="#none">
+        <li><img src="./sub1images/recommend2.jpg" alt="추천상품 이미지2"></li>
+        <li>[혜택UP/방콕&파타야] 오션뷰 5일 <br>
+          방콕 & 파타야 인기 여행지로 구성</li>
+        <li>#알카자쇼 #마사지120분 #코끼리트래킹</li>
+        <li>419,000원 ~</li>
+      </a>
+    </ul>
+  </div>
+
+  <!-- 이벤트 -->
+  <div class="event">
+    <h1>이벤트/결제혜택</h1>
+    <!-- 슬라이드 구문 -->
+      <div class="swiper-container gallery2">
+        <div class="gallery_inner2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/event1.png" alt="이벤트 배너이미지1">
+                <ul>
+                  <li>신라 면세점 쇼핑혜택 (블랙패스 발급)</li>
+                  <li>면세점쿠폰_<h7 class="small">최대 268,000p 제공</h7>
+                </ul>
+              </a>
+              <a href="#"><img src="./sub1images/event2.png" alt="이벤트 배너이미지2">
+                <ul>
+                  <li>신세계 면세점 쇼핑혜택 (회원 등급 업그레이드)</li>
+                  <li>면세점쿠폰_<h7 class="small">최대 12만원 할인</h7>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"><img src="./sub1images/event3.png" alt="이벤트 배너이미지3">
+                <ul>
+                  <li>봄에 여행도 떠나고 쇼핑도 하자</li>
+                  <li>봄 옷 쇼핑지원금 최대 25만원 혜택</li>
+                </ul>
+              </a>
+              <a href="#"><img src="./sub1images/event4.png" alt="이벤트 배너이미지4">
+                <ul>
+                  <li>카카오 간편가입 이벤트 (유어저니 X 카카오)</li>
+                  <li>즉시사용 가능한 1만 포인트 적립</li>
+                </ul>
+              </a>
+            </div>
+          </div>
+          <!-- 블릿 버튼 -->
+          <div class="swiper-pagination"></div>
+          <!-- 화살표 버튼 -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_inner">
+      <div class="footer_inner1">
+        <ul>
+          <li><a href="#">여행정보</a></li>
+          <li><a href="#">홍보센터</a></li>
+          <li><a href="#">여행약관</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">기업/단체문의</a></li>
+          <li><a href="#">대리점안내</a></li>
+          <li><a href="#">신용카드 무이자 할부안내</a></li>
+          <li><a href="#">유어저니 전화번호 안내</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="./mainimages/icon1.png" alt="소셜아이콘1"></a></li>
+          <li><a href="#"><img src="./mainimages/icon2.png" alt="소셜아이콘2"></a></li>
+          <li><a href="#"><img src="./mainimages/icon3.png" alt="소셜아이콘3"></a></li>
+          <li><a href="#"><img src="./mainimages/icon4.png" alt="소셜아이콘4"></a></li>
+          <li><a href="#"><img src="./mainimages/icon5.png" alt="소셜아이콘5"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_inner2">
+      <ul>
+        <li class="bold">Address & Contact</li>
+        <li>대표번호: 0000-0000</li>
+        <li>부산광역시 중구 중앙대로 26 10층</li>
+      </ul>
+      <ul>
+        <li class="bold">유어저니 Information</li>
+        <li>(주)유어저니 대표: 손예진</li>
+        <li>본사 사업자등록번호: 000-00-00000</li>
+        <li>관광 사업자등록번호: 000-00-00000</li>
+        <li>통신판매업신고번호: 중구 00000호</li>
+      </ul>
+      <ul>
+        <li class="bold">Follow us</li>
+        <li>여행자 배상책임보험 15억원 가입</li>
+        <li>일반여행업보증금외 15억원 가입</li>
+        <li>yourjourney@journey.co.kr</li>
+      </ul>
+      <ul class="right">
+        <li>유어저니 문의하기</li>
+        <li><img src="./mainimages/icon6.png" alt="소셜아이콘6">유어저니 대표번호</li>
+        <li><a href="#">0000-0000</a></li>
+        <li><a href="#">문의별번호안내</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+        <li><a href="#">1:1문의하기</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  <!-- 서브메뉴 슬라이드 js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="./script/submenu.js"></script>
+  <!-- 일자선택바 팝업 js -->
+  <script src="./script/sub1popup.js"></script>
+  <!-- 나라별 탭 js -->
+  <script src="script/tab.js"></script>
+  <!-- 일자선택 달력 js -->
+  <script src="./script/datepicker.min.js"></script>
+  <script src="./script/datepicker.ko.js"></script>
+  <script src="./script/date.js"></script>
+  <script src="./script/select.js"></script>
+  <!-- 베스트 갤러리 js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+  <script src="./script/sub1gallery2.js"></script>
+  <script src="./script/sub1gallery.js"></script>
+</body>
+
+</html>

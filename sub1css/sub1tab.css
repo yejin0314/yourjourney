@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 탭메뉴 꾸미기 */
+.tab {
+  width: 80%;
+  min-width: 1320px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.tabnav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tabnav li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.tabnav li a {
+  font-size: 23px;
+  padding: 20px 0px 21px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #000;
+}
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li a:hover{
+  color: #f66a0d;
+  background: #fff;
+  padding-bottom: 19px;
+  border-bottom: 3px solid #f66a0d;
+}
+
+.tabnav li .active {
+  border: 1px solid #000;
+  border-bottom: none;
+  color: #f66a0d;
+}
+.tabnav li .active:hover{
+  border-bottom: none;
+}
+/* 탭컨텐츠 꾸미기 */
+.country_inner {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.tabcontent {
+  padding: 20px 0;
+  position: relative;
+  top: -1px;
+}
+
+.tabnav a {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.country_inner>li {
+  margin-right: 76px;
+  position: relative;
+}
+
+.country_txt ul {
+  padding: 10px 0;
+}
+
+.country_txt li:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.country_txt li:nth-child(3) {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}

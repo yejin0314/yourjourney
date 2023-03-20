@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./mainimages/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>유어저니</title>
+</head>
+<link rel="stylesheet" href="./sub2.css">
+<!-- 일자선택 -->
+<link rel="stylesheet" href="./sub1css/sub1popup.css">
+<link rel="stylesheet" href="./sub1css/datepicker.min.css"> <!-- 여행일 예약 -->
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div class="nav1">
+        <ul>
+          <a href="#">
+            <li><img src="./mainimages/logo.png" alt="로고 이미지"></li>
+          </a>
+          <li><a href="#">해외여행</a>
+            <div class="sub"><!--서브메뉴 배경-->
+              <div>
+                <ul>
+                  <li><a href="#">유럽/아프리카</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">동남아</a></li>
+                  <li><a href="#">괌/사이판/호주/뉴질랜드</a></li>
+                  <li><a href="#">중앙아시아/몽골</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">국내여행</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">제주도</a></li>
+                  <li><a href="#">울릉도</a></li>
+                  <li><a href="#">홍도/흑산도</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">항공</a></li>
+          <li><a href="#">허니문</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">몰디브</a></li>
+                  <li><a href="#">하와이</a></li>
+                  <li><a href="#">칸쿤</a></li>
+                  <li><a href="#">모리셔스</a></li>
+                  <li><a href="#">푸켓/코사무이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">골프</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">베트남</a></li>
+                  <li><a href="#">태국</a></li>
+                  <li><a href="#">필리핀</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">괌/사이판/하와이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">예약/확인 결제</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <ul class="search">
+          <li><input type="search" placeholder="SEARCH"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 메인배너 -->
+  <div class="mainbanner">
+
+  </div>
+  <!-- 일자선택바 -->
+  <div class="book">
+    <a href="#none">
+      <div class="where">
+        <div><img src="./sub1images/locationicon.png" alt="위치아이콘 이미지"></div>
+        <p>어디로 떠나시나요?</p>
+      </div>
+    </a>
+    <a href="#none">
+      <div class="when">
+        <div><img src="./sub1images/calendaricon.png" alt="달력아이콘 이미지"></div>
+        <p>여행일이 어떻게 되시나요?</p>
+      </div>
+    </a>
+  </div>
+  <!-- 팝업 -->
+  <div class="popup_where">
+    <div>
+      <h1>어디로 떠나세요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <p><input type="search" placeholder="검색어를 입력하세요"></p>
+      <div class="where_inner">
+        <ul>
+          <li><a href="#none">유럽/아프리카</a></li>
+          <li><a href="#none">일본</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">중앙아시아/몽골</a></li>
+          <li><a href="#none">괌/사이판/호주/뉴질랜드</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">제주도</a></li>
+          <li><a href="#none">울릉도</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">홍도/흑산도</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">몰디브</a></li>
+          <li><a href="#none">하와이</a></li>
+          <li><a href="#none">칸쿤</a></li>
+          <li><a href="#none">모리셔스</a></li>
+          <li><a href="#none">푸켓/코사무이</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">베트남</a></li>
+          <li><a href="#none">태국</a></li>
+          <li><a href="#none">필리핀</a></li>
+          <li><a href="#none">일본</a></li>
+        </ul>
+      </div>
+      <ul class="where_black">
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">일정과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup_when">
+    <div>
+      <h1>여행일이 어떻게 되시나요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <div class="when_inner">
+        <ul class="date">
+          <li>
+            <h2>출발</h2>
+            <input id="datepicker1" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+          <li><img src="./sub1images/line.png" alt="구분바 이미지"></li>
+          <li>
+            <h2>도착</h2>
+            <input id="datepicker2" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+        </ul>
+      </div>
+
+      <ul class="when_black">
+        <li><a href="#">날짜 초기화</a></li>
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">지역과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 서브메뉴 슬라이드 js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="./script/submenu.js"></script>
+  <!-- 일자선택바 팝업 js -->
+  <script src="./script/sub1popup.js"></script>
+</body>
+
+</html>

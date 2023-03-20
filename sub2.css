@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: 'GmarketSansMedium';
+    min-width: 1320px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/* 헤더 */
+header{
+    border-bottom: 2px solid #f66a0d;
+}
+#header {
+    width: 80%;
+    min-width: 1320px;
+    margin: 20px auto 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  
+}
+/* 검색버튼 */
+input{
+    margin-top: 10px;
+    width: 251.89px;
+    padding: 6px 0;
+    border: 1px #000 solid;
+}
+input:hover::placeholder{
+    color: rgba(0, 0, 0, 0.3); 
+}
+input::placeholder{
+    font-family: 'GmarketSansMedium';
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    color: #000;
+    margin-right: 30px;
+    box-sizing: border-box;
+    
+}
+.nav1 ul,
+.nav2 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav1> ul> li:nth-child(2),
+.nav1> ul> li:nth-child(3),
+.nav1> ul> li:nth-child(4),
+.nav1> ul> li:nth-child(5),
+.nav1> ul> li:nth-child(6) {
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav2 {
+    align-items: center;
+}
+
+.nav2 li {
+    font-size: 12px;
+    font-weight: bold
+}
+
+.nav2 li:nth-child(2),
+.nav2 li:nth-child(3),
+.nav2 li:nth-child(4) {
+    margin-left: 15px;
+}
+
+.nav1> ul> li> a{
+    padding: 30px 0;
+    display: block;
+}
+.nav1 ul a:hover{
+    color: #f66b0e;
+}
+.nav2 ul:nth-child(1) a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+/* 서브메뉴 */
+.sub{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: none;
+    border-top: 2px solid #f66a0d;
+    z-index: 2;
+}
+header{
+    position: relative;
+}
+/* 서브메뉴 가운데 창 */
+.sub div{
+    width: 80%;
+    min-width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+/* 서브메뉴 꾸미기 */
+.sub div ul{
+    width: 100%;
+    padding-left: 206px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sub div ul a{
+    display: block;
+    padding: 25px 65px 20px 0px;
+    color: #000;
+    font-size: 14px;
+}
+/* 메인배너 영상삽입 예정 */
+.mainbanner{
+    height: 876px;
+    background-color: #000;
+}
+/* 일자선택바 */
+.book{
+    width: 80%;
+    margin: 120px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    justify-content: space-around;
+}
+.where div{
+    display: block;
+    width: 24px;
+    height: 33px;
+}
+
+.when div{
+    display: block;
+    width: 30px;
+    height: 33px;
+}
+
+.where, .when{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.where p, .when p{
+    font-size: 33px;
+    font-weight: 700;
+    padding-top: 8px;
+    margin-left: 10px;
+}

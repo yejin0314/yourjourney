@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.swiper-wrapper {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.gallery_inner2 {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.gallery2 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery2 .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+/* 하얀박스 텍스트 */
+.gallery_inner2 .swiper-slide a{
+	margin-right: 30px;
+	border: 5px #ebebeb solid ;
+	border-radius: 38px;
+}
+.swiper-slide{
+	width: 100%;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.gallery_inner2 .swiper-slide ul{
+	padding: 20px 0 20px 30px;
+}
+.swiper-slide li:nth-child(1){
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.swiper-slide li:nth-child(2){
+	font-size: 18px;
+	color: #8c8c8c;
+}
+.small{
+	font-size: 14px;
+}
+
+/* 이동버튼 이미지로 바꾸기  */
+.gallery2{
+	position: relative;
+}
+.gallery2 .swiper-button-prev,
+.gallery2 .swiper-button-next{
+	width: 45px;
+	height: 44px;
+	top:-18%
+}
+.gallery2 .swiper-button-prev{
+	left: 1380px;
+}
+.gallery2 .swiper-button-next{
+	left: 1455px;
+}
+.gallery2 .swiper-button-prev:after,
+.gallery2 .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gallery2 .swiper-button-prev:after{
+	background: url(../sub1images/btn_left2.png);
+}
+.gallery2 .swiper-button-next:after{
+	background: url(../sub1images/btn_right2.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery2 .swiper-pagination-bullet {
+	background: #ccc;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery2 .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery2 .swiper-horizontal>.swiper-pagination-bullets,
+.gallery2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: -50px;
+}
+
