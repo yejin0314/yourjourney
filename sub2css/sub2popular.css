@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+/* 탭메뉴 꾸미기 */
+.tab{
+  width:80%; 
+  overflow: hidden;
+  margin: auto;
+}
+.tabnav{
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  justify-content: center;
+}
+.tabcontent img{
+  width: 100%;
+}
+.tabnav li a{ 
+  display: block;
+  padding: 80px 100px 30px;
+  position: relative;
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li .active{
+  color: #f66a0d;
+}
+.tabnav li a:hover,
+.tabnav li a.active{
+  color: #f66a0d; 
+}
+/* 탭컨텐츠 꾸미기 */
+.tabnav a{
+  font-size: 25px;
+  font-weight: 600;
+}
+.popular_txt{
+  text-align: center;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  padding: 20px 0;
+  text-align: left;
+}
+
+/* 탭1 자유여행 */
+#tab01{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center; 
+}
+.popular_inner{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  position: relative;
+}
+.popular_inner> li{
+  padding-right: 30px;
+  position: relative;
+}
+
+/* 탭2 추천인기여행 */
+#tab02{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  justify-content: center; 
+}
+
+
+/* 탭3 추천인기여행 */
+#tab03{
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  justify-content: center; 
+}

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 탭메뉴 꾸미기 */
+.tab {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tabnav {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+
+.tabnav li a {
+  display: block;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.tabnav li .active{
+  z-index: 3;
+  /* 그림자 삽입 */
+}
+.tabnav li .active img{
+  transform: scale(1.1);
+}
+/* 혜택 이벤트 */
+.tab {
+  width: 80%;
+  margin: auto;
+}
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent {
+  position: relative;
+  margin: 0 auto 150px; 
+  max-width: 1636px;
+  padding: 30px 0;
+}
+.tabcontent img{
+  width: 100%;
+}
