@@ -65,6 +65,13 @@ header {
     color: #000;
 }
 
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
@@ -168,10 +175,9 @@ header {
     padding-right: 60px;
 }
 
-/* 메인배너 영상삽입 예정 */
-.mainbanner {
-    height: 876px;
-    background-color: #000;
+/* 메인배너 */
+.mainbanner img {
+    width: 100%;
 }
 
 /* 일자선택바 */
@@ -214,140 +220,127 @@ header {
     margin-left: 10px;
 }
 
-/* 인기별 */
-.popular {
-    width: 80%;
+/*  콘텐츠_떠오르는 허니문 여행지 */
+.best {
+    background-color: #96d0e4;
+    width: 100%;
     margin: auto;
-    text-align: center;
+    padding: 80px 0;
 }
 
-.popular h1 {
-    padding-top: 80px;
-}
-
-.popular span {
-    color: #f66a0d;
-}
-
-.popular_txt li:nth-child(1) {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.popular_txt li:nth-child(2) {
-    font-weight: 500;
-    font-size: 18px;
-    padding: 5px 0 20px;
-}
-
-.popular_txt li:nth-child(3) {
-    font-weight: bold;
-    font-size: 22px;
-}
-
-/* 국내여행 배너 */
-.banner {
-    width: 80%;
+/* 이벤트 배너 */
+.eventbanner {
+    width: 100%;
     margin: auto;
     padding: 150px 0;
 }
 
-.banner img {
+.eventbanner img {
     width: 100%;
     display: block;
 }
 
-/* 핫한 국내여행지 */
-.hot {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.hot span,
-.hot_txt span {
-    color: #f66a0d;
-}
-
-.hot h6 {
-    font-size: 22px;
-    font-weight: lighter;
-    padding: 20px 0;
-}
-
-.hot_txt {
-    color: #fff;
-}
-
-.hot_txt>h1 {
-    line-height: 60px;
-    padding-top: 100px;
-}
-
-.hot_txt>h5 {
-    padding-top: 45px;
-    line-height: 37px;
-    font-size: 15px;
-}
-
-.hot_inner {
-    width: 80%;
+/* pick 허니문 여행지 */
+.pick {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1920px;
+    min-width: 1320px;
     margin: auto;
-    background: url(./sub2images/hot_background.jpg) no-repeat center;
-    box-sizing: border-box;
-    display: -moz-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 50px 40px;
-    justify-content: space-between;
-    margin-bottom: 150px;
-}
-
-.content {
-    width: 80%;
-    display: -moz-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.content a {
+    overflow: hidden;
     position: relative;
 }
 
-.content>li {
-    padding: 0 20px 20px 0;
-}
-
-.content_txt {
-    padding: 20px 30px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    bottom: 0;
+.pick_txt {
+    width: 290px;
+    height: 495px;
+    background-color: #fe9b9b;
+    padding: 20px 40px;
     box-sizing: border-box;
 }
 
-.content img {
-    display: block;
+.pick_txt span {
+    color: #fff;
 }
 
-.content_txt li:nth-child(1) {
+.pick_txt li:nth-child(1) {
     font-weight: 700;
-    font-size: 20px;
-}
-
-.content_txt li:nth-child(2) {
-    font-weight: 500;
     font-size: 18px;
-    padding: 5px 0 20px;
+    padding: 40px 0;
 }
 
-.content_txt li:nth-child(3) {
+.pick_txt li:nth-child(2) {
     font-weight: bold;
-    font-size: 27px;
+    font-size: 29px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.pick_txt li:nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 60px;
+    line-height: 30px;
+}
+
+/* 하얀박스 */
+.gallery_txt {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.gallery_txt li:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.gallery_txt li:nth-child(2) {
+    font-size: 13px;
+}
+
+.gallery_txt li:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.gallery_txt ul {
+    padding-left: 30px;
+}
+
+.swiper-slide a {
+    position: relative;
+}
+
+/* 콘텐츠_럭셔리 허니문 여행지 */
+.luxury {
+    text-align: center;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.luxury h4 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.luxury h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 80px 0;
+}
+
+.luxury span {
+    color: #f66a0d;
 }
 
 /* 푸터 */

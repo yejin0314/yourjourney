@@ -1,13 +1,527 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./mainimages/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>유어저니</title>
+  <link rel="stylesheet" href="./sub4.css">
+  <!-- 일자선택 -->
+  <link rel="stylesheet" href="./sub1css/sub1popup.css">
+  <link rel="stylesheet" href="./sub1css/datepicker.min.css"> <!-- 여행일 예약 -->
+  <!-- 떠오르는 허니문 여행지 탭 -->
+  <link rel="stylesheet" href="./sub4css/sub4tab.css">
+  <!-- pick 허니문 여행지 갤러리 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /><!--수정X-->
+  <link rel="stylesheet" href="./sub4css/sub4gallery.css">
+  <!-- 럭셔리 허니문 영상 탭 -->
+  <link rel="stylesheet" href="./sub4css/sub4videotab.css">
 </head>
+
 <body>
-  
+  <!-- 헤더 -->
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div class="nav1">
+        <ul>
+          <li><a href="./index.html">
+              <img src="./mainimages/logo.png" alt="로고 이미지"></a></li>
+          <li><a href="./sub1.html">해외여행</a>
+            <div class="sub"><!--서브메뉴 배경-->
+              <div>
+                <ul>
+                  <li><a href="#">유럽/아프리카</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">동남아</a></li>
+                  <li><a href="#">괌/사이판/호주/뉴질랜드</a></li>
+                  <li><a href="#">중앙아시아/몽골</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub2.html">국내여행</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">제주도</a></li>
+                  <li><a href="#">울릉도</a></li>
+                  <li><a href="#">홍도/흑산도</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub3.html">항공</a></li>
+          <li><a href="./sub4.html">허니문</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">몰디브</a></li>
+                  <li><a href="#">하와이</a></li>
+                  <li><a href="#">칸쿤</a></li>
+                  <li><a href="#">모리셔스</a></li>
+                  <li><a href="#">푸켓/코사무이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub5.html">골프</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">베트남</a></li>
+                  <li><a href="#">태국</a></li>
+                  <li><a href="#">필리핀</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">괌/사이판/하와이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#none">로그인</a></li>
+          <li><a href="#none">회원가입</a></li>
+          <li><a href="#none">예약/확인 결제</a></li>
+          <li><a href="#none">고객센터</a></li>
+        </ul>
+        <ul class="search">
+          <li><input type="search" placeholder="SEARCH"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인배너 -->
+  <div class="mainbanner">
+    <img src="./sub4images/mainbanner.jpg" alt="메인배너 이미지">
+  </div>
+
+  <!-- 일자선택바 -->
+  <div class="book">
+    <a href="#none">
+      <div class="where">
+        <div><img src="./sub1images/locationicon.png" alt="위치아이콘 이미지"></div>
+        <p>어디로 떠나시나요?</p>
+      </div>
+    </a>
+    <a href="#none">
+      <div class="when">
+        <div><img src="./sub1images/calendaricon.png" alt="달력아이콘 이미지"></div>
+        <p>여행일이 어떻게 되시나요?</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- 팝업 -->
+  <div class="popup_where">
+    <div>
+      <h1>어디로 떠나세요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <p><input type="search" placeholder="검색어를 입력하세요"></p>
+      <div class="where_inner">
+        <ul>
+          <li><a href="#none">유럽/아프리카</a></li>
+          <li><a href="#none">일본</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">중앙아시아/몽골</a></li>
+          <li><a href="#none">괌/사이판/호주/뉴질랜드</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">제주도</a></li>
+          <li><a href="#none">울릉도</a></li>
+          <li><a href="#none">동남아</a></li>
+          <li><a href="#none">홍도/흑산도</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">몰디브</a></li>
+          <li><a href="#none">하와이</a></li>
+          <li><a href="#none">칸쿤</a></li>
+          <li><a href="#none">모리셔스</a></li>
+          <li><a href="#none">푸켓/코사무이</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none">베트남</a></li>
+          <li><a href="#none">태국</a></li>
+          <li><a href="#none">필리핀</a></li>
+          <li><a href="#none">일본</a></li>
+        </ul>
+      </div>
+      <ul class="where_black">
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">일정과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup_when">
+    <div>
+      <h1>여행일이 어떻게 되시나요?</h1>
+      <p><a href="#none"><img src="./sub1images/close.png" alt="닫기버튼 이미지"></a></p>
+      <div class="when_inner">
+        <ul class="date">
+          <li>
+            <h2>출발</h2>
+            <input id="datepicker1" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+          <li><img src="./sub1images/line.png" alt="구분바 이미지"></li>
+          <li>
+            <h2>도착</h2>
+            <input id="datepicker2" type="text" placeholder="날짜를 선택해 주세요.">
+          </li>
+        </ul>
+      </div>
+      <ul class="when_black">
+        <li><a href="#">날짜 초기화</a></li>
+        <li><a href="#">여행 검색</a></li>
+        <li><a href="#">지역과 함께 검색</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 콘텐츠_떠오르는 허니문 여행지 -->
+  <div class="best">
+    <!--tab-->
+    <div class="tab">
+      <div class="tab_txt">
+        <ul>
+          <li class="besttxt">BEST</li>
+          <li class="honeytxt">떠오르는 <br>
+            <span>허니문 여행지</span>
+          </li>
+        </ul>
+        <ul class="tabnav">
+          <li><a href="#tab01">괌/사이판</a></li>
+          <li><a href="#tab02">하와이</a></li>
+          <li><a href="#tab03">몰디브</a></li>
+          <li><a href="#tab04">발리</a></li>
+        </ul>
+      </div>
+      <div class="tabcontent">
+        <!-- 괌/사이판 -->
+        <div id="tab01">
+          <ul class="best_inner g">
+            <li class="left"><a href="#none"><img src="./sub4images/best_g1.png" alt="떠오르는 괌/사이판 이미지1">
+                <div class="best_txt">
+                  <ul>
+                    <li>[바람도 멈추는 곳] 사이판</li>
+                    <li>하얏트 리젠시 4박5일 <br>
+                      #11월예약자특전</li>
+                    <li>1,590,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li class="middle"><a href="#none"><img src="./sub4images/best_g2.png" alt="떠오르는 괌/사이판 이미지2">
+                <div class="best_txt">
+                  <ul>
+                    <li>[자연의 순수함 만끽] 사이판</li>
+                    <li>아쿠아 리조트 4박5일 <br>
+                      #티니안섬관광포함</li>
+                    <li>1,590,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li><a href="#none"><img src="./sub4images/best_g3.png" alt="떠오르는 괌/사이판 이미지3">
+                <div class="best_txt">
+                  <ul>
+                    <li>[지상낙원에서 놀고먹기] 사이판</li>
+                    <li>켄싱턴리조트 4박5일 <br>
+                      #조식석식제공</li>
+                    <li>2,090,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+          </ul>
+        </div>
+        <!-- 하와이 -->
+        <div id="tab02">
+          <ul class="best_inner h">
+            <li class="left"><a href="#none"><img src="./sub4images/best_h1.png" alt="떠오르는 하와이 이미지1">
+                <div class="best_txt">
+                  <ul>
+                    <li>[액티비티로 즐기는 허니문] 하와이</li>
+                    <li>하얏트리젠시 7일 <br>
+                      #룸업그레이드</li>
+                    <li>3,100,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li class="middle"><a href="#none"><img src="./sub4images/best_h2.png" alt="떠오르는 하와이 이미지2">
+                <div class="best_txt">
+                  <ul>
+                    <li>[더 특별한 허니문] 하와이</li>
+                    <li>쉐라톤와이키키 7일 <br>
+                      #오션프론트 룸업그레이드</li>
+                    <li>3,790,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li><a href="#none"><img src="./sub4images/best_h3.png" alt="떠오르는 하와이 이미지3">
+                <div class="best_txt">
+                  <ul>
+                    <li>[가성비 끝 허니문] 하와이</li>
+                    <li>알로힐라니 7일 <br>
+                      #객실크레딧제공</li>
+                    <li>3,440,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+          </ul>
+        </div>
+        <!-- 몰디브 -->
+        <div id="tab03">
+          <ul class="best_inner m">
+            <li class="left"><a href="#none"><img src="./sub4images/best_m1.png" alt="떠오르는 몰디브 이미지1">
+                <div class="best_txt">
+                  <ul>
+                    <li>[둘만의 찐 허니문] 몰디브</li>
+                    <li>헤리턴스아라 6일 <br>
+                      #올인크루시브</li>
+                    <li>4,390,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li class="middle"><a href="#none"><img src="./sub4images/best_m2.png" alt="떠오르는 몰디브 이미지2">
+                <div class="best_txt">
+                  <ul>
+                    <li>[지상낙원 허니문] 몰디브</li>
+                    <li>페어몬트 시루펜푸시 6일 <br>
+                      #하프보드</li>
+                    <li>4,490,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li><a href="#none"><img src="./sub4images/best_m3.png" alt="떠오르는 몰디브 이미지3">
+                <div class="best_txt">
+                  <ul>
+                    <li>[프라이빗한 허니문] 몰디브</li>
+                    <li>코모 말리무시 6일 <br>
+                      #하프보드</li>
+                    <li>4,990,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+          </ul>
+        </div>
+        <!-- 발리 -->
+        <div id="tab04">
+          <ul class="best_inner b">
+            <li class="left"><a href="#none"><img src="./sub4images/best_b1.png" alt="떠오르는 발리 이미지1">
+                <div class="best_txt">
+                  <ul>
+                    <li>[체험과 휴양 모두 즐기는] 발리</li>
+                    <li>포시즌 짐바란베이빌라 2박 <br>
+                      #스파/마사지 4회</li>
+                    <li>2,543,400원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li class="middle"><a href="#none"><img src="./sub4images/best_b2.png" alt="떠오르는 발리 이미지2">
+                <div class="best_txt">
+                  <ul>
+                    <li>[전통과 휴양 모두 즐기는] 발리</li>
+                    <li>발리 더엣지 6일 <br>
+                      #환상적인뷰 #유어저니 회원 전용
+                      #하프보드</li>
+                    <li>2,790,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+            <li><a href="#none"><img src="./sub4images/best_b3.png" alt="떠오르는 발리 이미지3">
+                <div class="best_txt">
+                  <ul>
+                    <li>[자연과 휴양 모두 즐기는] 발리</li>
+                    <li>발리 안바야 풀빌라 6일 <br>
+                      #전일정 특식 #마운틴뷰</li>
+                    <li>2,399,000원 ~</li>
+                  </ul>
+                </div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 이벤트 배너 -->
+  <div class="eventbanner">
+    <a href="#none"><img src="./sub4images/eventbanner.jpg" alt="이벤트 배너"></a>
+  </div>
+
+  <!-- 콘텐츠_pick 허니문 여행지  -->
+  <div class="pick">
+    <div class="pick_txt">
+      <ul>
+        <li>핫한 여행지 추천</li>
+        <li>유어저니 PICK <br>
+          <span>허니문 여행지</span>
+        </li>
+        <li> <span>둘만의 특별한 허니문을 <br>
+            즐겨보세요</span></li>
+      </ul>
+    </div>
+    <div class="swiper-container gallery">
+      <div class="gallery_inner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="./sub4images/pick1.png" alt="pick 허니문 여행지 이미지1">
+              <div class="gallery_txt">
+                <ul>
+                  <li>[둘만의 특별한 허니문] 발리</li>
+                  <li>원베드 클리프 풀빌라 2박 <br>
+                    #스파/마사지 4회</li>
+                  <li>3,083,400원 ~</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./sub4images/pick2.png" alt="pick 허니문 여행지 이미지2">
+              <div class="gallery_txt">
+                <ul>
+                  <li>[이게바로 신행이지] 태국,푸켓</li>
+                  <li>파레사 4박6일 <br>
+                    #리조트2박+풀빌라2박</li>
+                  <li>2,090,400원 ~</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./sub4images/pick3.png" alt="pick 허니문 여행지 이미지3">
+              <div class="gallery_txt">
+                <ul>
+                  <li>[지상낙원 허니문] 모리셔스</li>
+                  <li>서북부 뚜르오비슈 7일 <br>
+                    #풀보드 #스파 즐기기</li>
+                  <li>3,090,000원 ~</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./sub4images/pick4.png" alt="pick 허니문 여행지 이미지4">
+              <div class="gallery_txt">
+                <ul>
+                  <li>[NO.1 리조트] 멕시코.칸쿤</li>
+                  <li>시크릿더바인 7일 <br>
+                    #호텔존 #프라이빗존</li>
+                  <li>3,990,000원 ~</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./sub4images/pick5.png" alt="pick 허니문 여행지 이미지5">
+              <div class="gallery_txt">
+                <ul>
+                  <li>[유어저니 추천 허니] 몰디브</li>
+                  <li>두짓타니 리조트 6일 <br>
+                    #투어텔 #추천 리조트</li>
+                  <li>3,060,000원 ~</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- 블릿 버튼 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 콘텐츠_럭셔리 허니문 여행지  -->
+  <div class="luxury">
+    <h4>럭셔리 호텔에서 즐기는 허니문</h4>
+    <h1>LUXURY <span>HONEYMOON</span></h1>
+    <!--tab-->
+    <div class="tabviedo">
+      <ul class="tabnav">
+        <li><a href="#tab1">탭1</a></li>
+        <li><a href="#tab2">탭2</a></li>
+      </ul>
+      <div class="tabcontent">
+        <div id="tab1">tab1 content</div>
+        <div id="tab2">tab2 content</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_inner">
+      <div class="footer_inner1">
+        <ul>
+          <li><a href="#none">여행정보</a></li>
+          <li><a href="#none">홍보센터</a></li>
+          <li><a href="#none">여행약관</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">기업/단체문의</a></li>
+          <li><a href="#none">대리점안내</a></li>
+          <li><a href="#none">신용카드 무이자 할부안내</a></li>
+          <li><a href="#none">유어저니 전화번호 안내</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none"><img src="./mainimages/icon1.png" alt="소셜아이콘1"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon2.png" alt="소셜아이콘2"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon3.png" alt="소셜아이콘3"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon4.png" alt="소셜아이콘4"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon5.png" alt="소셜아이콘5"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_inner2">
+      <ul>
+        <li class="bold">Address & Contact</li>
+        <li>대표번호: 0000-0000</li>
+        <li>부산광역시 중구 중앙대로 26 10층</li>
+      </ul>
+      <ul>
+        <li class="bold">유어저니 Information</li>
+        <li>(주)유어저니 대표: 손예진</li>
+        <li>본사 사업자등록번호: 000-00-00000</li>
+        <li>관광 사업자등록번호: 000-00-00000</li>
+        <li>통신판매업신고번호: 중구 00000호</li>
+      </ul>
+      <ul>
+        <li class="bold">Follow us</li>
+        <li>여행자 배상책임보험 15억원 가입</li>
+        <li>일반여행업보증금외 15억원 가입</li>
+        <li>yourjourney@journey.co.kr</li>
+      </ul>
+      <ul class="right">
+        <li>유어저니 문의하기</li>
+        <li><img src="./mainimages/icon6.png" alt="소셜아이콘6">유어저니 대표번호</li>
+        <li>0000-0000</li>
+        <li><a href="#none">문의별번호안내</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+        <li><a href="#none">1:1문의하기</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+  <!-- 서브메뉴 슬라이드 js -->
+  <script src="./script/submenu.js"></script>
+  <!-- 일자선택바 팝업 js -->
+  <script src="./script/sub1popup.js"></script>
+  <!-- 나라별 탭 js -->
+  <script src="script/tab.js"></script>
+  <!-- 일자선택 달력 js -->
+  <script src="./script/datepicker.min.js"></script>
+  <script src="./script/datepicker.ko.js"></script>
+  <script src="./script/date.js"></script>
+  <script src="./script/select.js"></script>
+  <!--떠오르는 허니문 여행지js  -->
+  <script src="script/tab.js"></script>
+  <!-- pick 허니문 여행지 js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+  <script src="./script/sub4gallery.js"></script><!--디자인에 맞게 수정-->
 </body>
+
 </html>

@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
   <link href="./mainimages/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
   <title>유어저니</title>
-</head>
-<link rel="stylesheet" href="./sub2.css">
-<!-- 일자선택 -->
-<link rel="stylesheet" href="./sub1css/sub1popup.css">
-<link rel="stylesheet" href="./sub1css/datepicker.min.css"> <!-- 여행일 예약 -->
+  <link rel="stylesheet" href="./sub2.css">
+  <!-- 일자선택 -->
+  <link rel="stylesheet" href="./sub1css/sub1popup.css">
+  <link rel="stylesheet" href="./sub1css/datepicker.min.css"> <!-- 여행일 예약 -->
+  <!-- 인기별 탭 -->
+  <link rel="stylesheet" href="./sub2css/sub2popular.css">
 </head>
 
 <body>
@@ -20,10 +21,9 @@
     <div id="header">
       <div class="nav1">
         <ul>
-          <a href="#">
-            <li><img src="./mainimages/logo.png" alt="로고 이미지"></li>
-          </a>
-          <li><a href="#">해외여행</a>
+          <li><a href="./index.html">
+              <img src="./mainimages/logo.png" alt="로고 이미지"></a></li>
+          <li><a href="./sub1.html">해외여행</a>
             <div class="sub"><!--서브메뉴 배경-->
               <div>
                 <ul>
@@ -36,7 +36,7 @@
               </div>
             </div>
           </li>
-          <li><a href="#">국내여행</a>
+          <li><a href="./sub2.html">국내여행</a>
             <div class="sub">
               <div>
                 <ul>
@@ -47,8 +47,8 @@
               </div>
             </div>
           </li>
-          <li><a href="#">항공</a></li>
-          <li><a href="#">허니문</a>
+          <li><a href="./sub3.html">항공</a></li>
+          <li><a href="./sub4.html">허니문</a>
             <div class="sub">
               <div>
                 <ul>
@@ -61,7 +61,7 @@
               </div>
             </div>
           </li>
-          <li><a href="#">골프</a>
+          <li><a href="./sub5.html">골프</a>
             <div class="sub">
               <div>
                 <ul>
@@ -173,11 +173,309 @@
       </ul>
     </div>
   </div>
+
+  <!-- 콘텐츠-국내인기여행지 -->
+  <div class="popular">
+    <h1><span>국내 인기 여행지</span>만 모았다</h1>
+  </div>
+  <!--tab-->
+  <div class="tab">
+    <ul class="tabnav">
+      <li><a href="#tab01">제주도</a></li>
+      <li><a href="#tab02">섬여행</a></li>
+      <li><a href="#tab03">국내여행</a></li>
+    </ul>
+    <div class="tabcontent">
+      <!-- 탭1 -->
+      <div id="tab01">
+        <!-- 제주도 -->
+        <ul class="popular_inner j">
+          <li><a href="#none"><img src="./sub2images/jeju1.jpg" alt="인기별 여행지 제주도 이미지1">
+              <div class="popular_txt">
+                <ul>
+                  <li>[안성맞춤] 제주 3일<br>
+                  <li>#썬호텔 #전복돌솥밥<br>
+                    #힐링족욕 #서귀포유람선</li>
+                  <li>499,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/jeju2.jpg" alt="인기별 여행지 제주도 이미지2">
+              <div class="popular_txt">
+                <ul>
+                  <li>[탐나는섬] 제주 3일<br>
+                  <li>#남제주 집중탐방 #올레시장<br>
+                    #큰엉해안경승지</li>
+                  <li>329,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/jeju3.jpg" alt="인기별 여행지 제주도 이미지3">
+              <div class="popular_txt">
+                <ul>
+                  <li>[내맘대로] 제주 3일<br>
+                  <li># DIY여행 #드라이빙가이드<br>
+                    #차량포함 #우리끼리</li>
+                  <li>469,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/jeju4.jpg" alt="인기별 여행지 제주도 이미지4">
+              <div class="popular_txt">
+                <ul>
+                  <li>[감귤체험] 제주 3일<br>
+                  <li>#우도 관광 #제주 핫플레이스<br>
+                    #겨울&동백 #감귤따기 체험</li>
+                  <li>299,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭2 -->
+      <div id="tab02">
+        <!-- 섬여행 -->
+        <ul class="popular_inner i">
+          <li><a href="#none"><img src="./sub2images/island1.jpg" alt="인기별 여행지 섬여행 이미지1">
+              <div class="popular_txt">
+                <ul>
+                  <li>[섬섬투어] 제주3일<br>
+                  <li>#섬안의섬 우도&마라도<br>
+                    #현지특식제공</li>
+                  <li>359,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/island2.jpg" alt="인기별 여행지 섬여행 이미지2">
+              <div class="popular_txt">
+                <ul>
+                  <li>[연합상품]홍도/흑산도 3일<br>
+                  <li>#홍도유람선 #흑산도육로관광<br>
+                    #흑산문화관광호텔</li>
+                  <li>415,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/island3.jpg" alt="인기별 여행지 섬여행 이미지3">
+              <div class="popular_txt">
+                <ul>
+                  <li>[강릉항] 울릉도 3일<br>
+                  <li>#호텔/리조트급<br>
+                    #육로일주관광(A,B코스)</li>
+                  <li>329,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/island4.jpg" alt="인기별 여행지 섬여행 이미지4">
+              <div class="popular_txt">
+                <ul>
+                  <li>[KTX]홍도/흑산도 2일<br>
+                  <li>#홍도유람선 #흑산도자유관광<br>
+                    #유달산</li>
+                  <li>359,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- 탭3 -->
+      <div id="tab03">
+        <!--  내륙여행 -->
+        <ul class="popular_inner l">
+          <li><a href="#none"><img src="./sub2images/land1.jpg" alt="인기별 여행지 내륙여행 이미지1">
+              <div class="popular_txt">
+                <ul>
+                  <li>[KTX] 바다의 도시 부산 2일<br>
+                  <li>#인생샷여행 #사진작가동반<br>
+                    #해운대해변열차 #해동용궁사</li>
+                  <li>299,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/land2.jpg" alt="인기별 여행지 내륙여행 이미지2">
+              <div class="popular_txt">
+                <ul>
+                  <li>[강릉/묵호항] 울릉도 3일 <br>
+                  <li>#육로일주관광(A,B코스)<br>
+                    #관음도,삼선암 경유</li>
+                  <li>329,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/land3.jpg" alt="인기별 여행지 내륙여행 이미지3">
+              <div class="popular_txt">
+                <ul>
+                  <li>[지원특가] 아산/예산 당일<br>
+                  <li>#감성여행 #예당호출렁다리<br>
+                    #지중해마을 #외암마을 #봉곡사</li>
+                  <li>22,900원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+          <li><a href="#none"><img src="./sub2images/land4.jpg" alt="인기별 여행지 내륙여행 이미지4">
+              <div class="popular_txt">
+                <ul>
+                  <li>[[KTX]광양/전주 당일<br>
+                  <li>#매화마을 #한옥마을<br>
+                    #봄꽃여행</li>
+                  <li>109,000원 ~</li>
+                </ul>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 국내여행 배너 -->
+  <div class="banner">
+    <a href="#none"><img src="./sub2images/banner.jpg" alt="이벤트 배너 이미지"></a>
+  </div>
+  <!-- 콘텐츠-핫한 국내여행지 -->
+  <div class="hot">
+    <h1><span>핫한 국내 여행지</span>로 떠나자</h1>
+    <h6>유어저니의 여행전문가가 추천하는 핫한 여행지</h6>
+  </div>
+  <div class="hot_inner">
+    <div class="hot_txt">
+      <h1>지금 국내<br>
+        <span>핫한</span>여행지
+      </h1>
+      <h5>#이달의 대표여행 #인기여행지<br>
+        #주간 베스트 여행지 #국내여행지
+      </h5>
+    </div>
+    <ul class="content">
+      <li><a href="#none"><img src="./sub2images/content1.jpg" alt="핫한 국내 여행지 이미지1">
+          <div class="content_txt">
+            <ul>
+              <li>[안성맞춤] 제주 3일<br>
+              <li>#썬호텔 #전복돌솥밥<br>
+                #힐링족욕 #서귀포유람선</li>
+              <li>499,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+      <li><a href="#none"><img src="./sub2images/content2.jpg" alt="핫한 국내 여행지 이미지2">
+          <div class="content_txt">
+            <ul>
+              <li>[포항항/독도포함] 울릉도 3일<br>
+              <li>#도동 호텔급 #예림원<br>
+                #육로일주관광(A,B코스)</li>
+              <li>409,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+      <li><a href="#none"><img src="./sub2images/content3.jpg" alt="핫한 국내 여행지 이미지3">
+          <div class="content_txt">
+            <ul>
+              <li>[KTX] 여수/고흥 2일<br>
+              <li>#낭도섬/연홍도/소록도<br>
+                #고흥우주발사전망대</li>
+              <li>199,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+      <li><a href="#none"><img src="./sub2images/content4.jpg" alt="핫한 국내 여행지 이미지4">
+          <div class="content_txt">
+            <ul>
+              <li>[안성맞춤] 제주 3일<br>
+              <li>#인피티트풀 호텔 #샛별오름<br>
+                #힐링휴양 #맛집투어</li>
+              <li>699,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+      <li><a href="#none"><img src="./sub2images/content5.jpg" alt="핫한 국내 여행지 이미지5">
+          <div class="content_txt">
+            <ul>
+              <li>[핫플레이스] 제주3일<br>
+              <li>#산양큰엉곶#가파도<br>
+                #사려니숲길#시내호텔</li>
+              <li>319,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+      <li><a href="#none"><img src="./sub2images/content6.jpg" alt="핫한 국내 여행지 이미지6">
+          <div class="content_txt">
+            <ul>
+              <li>[내나라여행] 경상일주 3일<br>
+              <li>#경주 #맛기행<br>
+                #월정교 #첨성대 #대릉원</li>
+              <li>359,000원 ~</li>
+            </ul>
+          </div>
+        </a></li>
+    </ul>
+  </div>
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_inner">
+      <div class="footer_inner1">
+        <ul>
+          <li><a href="#none">여행정보</a></li>
+          <li><a href="#none">홍보센터</a></li>
+          <li><a href="#none">여행약관</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">기업/단체문의</a></li>
+          <li><a href="#none">대리점안내</a></li>
+          <li><a href="#none">신용카드 무이자 할부안내</a></li>
+          <li><a href="#none">유어저니 전화번호 안내</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none"><img src="./mainimages/icon1.png" alt="소셜아이콘1"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon2.png" alt="소셜아이콘2"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon3.png" alt="소셜아이콘3"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon4.png" alt="소셜아이콘4"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon5.png" alt="소셜아이콘5"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_inner2">
+      <ul>
+        <li class="bold">Address & Contact</li>
+        <li>대표번호: 0000-0000</li>
+        <li>부산광역시 중구 중앙대로 26 10층</li>
+      </ul>
+      <ul>
+        <li class="bold">유어저니 Information</li>
+        <li>(주)유어저니 대표: 손예진</li>
+        <li>본사 사업자등록번호: 000-00-00000</li>
+        <li>관광 사업자등록번호: 000-00-00000</li>
+        <li>통신판매업신고번호: 중구 00000호</li>
+      </ul>
+      <ul>
+        <li class="bold">Follow us</li>
+        <li>여행자 배상책임보험 15억원 가입</li>
+        <li>일반여행업보증금외 15억원 가입</li>
+        <li>yourjourney@journey.co.kr</li>
+      </ul>
+      <ul class="right">
+        <li>유어저니 문의하기</li>
+        <li><img src="./mainimages/icon6.png" alt="소셜아이콘6">유어저니 대표번호</li>
+        <li>0000-0000</li>
+        <li><a href="#none">문의별번호안내</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+        <li><a href="#none">1:1문의하기</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
   <!-- 서브메뉴 슬라이드 js -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="./script/submenu.js"></script>
   <!-- 일자선택바 팝업 js -->
   <script src="./script/sub1popup.js"></script>
+  <!-- 인기별 탭 js -->
+  <script src="script/tab.js"></script>
+  <!-- 일자선택 달력 js -->
+  <script src="./script/datepicker.min.js"></script>
+  <script src="./script/datepicker.ko.js"></script>
+  <script src="./script/date.js"></script>
+  <script src="./script/select.js"></script>
 </body>
 
 </html>

@@ -65,6 +65,13 @@ header {
     color: #000;
 }
 
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
@@ -114,8 +121,9 @@ input::-webkit-search-results-decoration {
     margin-left: 15px;
 }
 
+
 .nav1 ul a:hover {
-    color: #f66a0d;
+    color: #f66b0e;
 }
 
 .nav2 ul:nth-child(1) a:hover {
@@ -167,187 +175,189 @@ header {
 .sub ul li {
     padding-right: 60px;
 }
-
-/* 메인배너 영상삽입 예정 */
-.mainbanner {
-    height: 876px;
-    background-color: #000;
+/* 메인배너 */
+.mainbanner img {
+    width: 100%;
 }
 
-/* 일자선택바 */
-.book {
-    width: 80%;
-    margin: 120px auto;
-    display: -moz-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-around;
-}
-
-.where div {
-    display: block;
-    width: 24px;
-    height: 33px;
-}
-
-.when div {
-    display: block;
-    width: 30px;
-    height: 33px;
-}
-
-.where,
-.when {
-    display: -moz-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-}
-
-.where p,
-.when p {
-    font-size: 33px;
-    font-weight: 700;
-    padding-top: 8px;
-    margin-left: 10px;
-}
-
-/* 인기별 */
-.popular {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-.popular h1 {
-    padding-top: 80px;
-}
-
-.popular span {
-    color: #f66a0d;
-}
-
-.popular_txt li:nth-child(1) {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.popular_txt li:nth-child(2) {
-    font-weight: 500;
-    font-size: 18px;
-    padding: 5px 0 20px;
-}
-
-.popular_txt li:nth-child(3) {
+/* 콘텐츠_특가항공편 */
+.special h1 {
+    margin: 130px 0 50px;
+    font-size: 40px;
     font-weight: bold;
-    font-size: 22px;
-}
-
-/* 국내여행 배너 */
-.banner {
-    width: 80%;
-    margin: auto;
-    padding: 150px 0;
-}
-
-.banner img {
-    width: 100%;
-    display: block;
-}
-
-/* 핫한 국내여행지 */
-.hot {
-    width: 80%;
-    margin: 20px auto;
     text-align: center;
 }
 
-.hot span,
-.hot_txt span {
+.special span {
     color: #f66a0d;
 }
 
-.hot h6 {
-    font-size: 22px;
-    font-weight: lighter;
-    padding: 20px 0;
-}
-
-.hot_txt {
-    color: #fff;
-}
-
-.hot_txt>h1 {
-    line-height: 60px;
-    padding-top: 100px;
-}
-
-.hot_txt>h5 {
-    padding-top: 45px;
-    line-height: 37px;
-    font-size: 15px;
-}
-
-.hot_inner {
+.special_inner {
     width: 80%;
     margin: auto;
-    background: url(./sub2images/hot_background.jpg) no-repeat center;
-    box-sizing: border-box;
     display: -moz-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 50px 40px;
-    justify-content: space-between;
-    margin-bottom: 150px;
+    justify-content: center;
 }
 
-.content {
-    width: 80%;
-    display: -moz-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.content a {
-    position: relative;
-}
-
-.content>li {
-    padding: 0 20px 20px 0;
-}
-
-.content_txt {
-    padding: 20px 30px;
+.special_inner img {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    bottom: 0;
-    box-sizing: border-box;
 }
 
-.content img {
-    display: block;
+.special_inner ul {
+    margin-right: 30px;
+
 }
 
-.content_txt li:nth-child(1) {
+.special_inner li:nth-child(2) {
     font-weight: 700;
     font-size: 20px;
+    padding: 20px 0 5px;
 }
 
-.content_txt li:nth-child(2) {
+.special_inner li:nth-child(3) {
     font-weight: 500;
     font-size: 18px;
-    padding: 5px 0 20px;
 }
 
-.content_txt li:nth-child(3) {
+.special_inner li:nth-child(4) {
     font-weight: bold;
     font-size: 27px;
+    padding-top: 25px;
+}
+
+/* 기획 해외 항공편 */
+.overseasbanner {
+    max-width: 1920px;
+    width: 80%;
+    height: 171px;
+    margin: 100px auto;
+    background: url(./sub3images/overseasbanner.jpg) no-repeat right top #ff9916;
+}
+
+.overseasbanner ul {
+    padding: 43.5px 0 30px 120px;
+}
+
+.overseasbanner li:nth-child(1) {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.overseasbanner li:nth-child(2) {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.overseas {
+    width: 80%;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.overseas img {
+    width: 100%;
+}
+
+.overseas ul {
+    margin-right: 30px;
+
+}
+
+.overseas li:nth-child(2) {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 0 5px;
+}
+
+.overseas li:nth-child(3) {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.overseas li:nth-child(4) {
+    font-weight: bold;
+    font-size: 27px;
+    padding-top: 25px;
+}
+
+/* 기획 국내 항공편 */
+.domesticbanner {
+    max-width: 1920px;
+    width: 80%;
+    height: 171px;
+    margin: 100px auto;
+    background: url(./sub3images/domesticbanner.jpg) no-repeat right top #61b7f0;
+}
+
+.domesticbanner ul {
+    padding: 43.5px 0 30px 120px;
+}
+
+.domesticbanner li:nth-child(1) {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.domesticbanner li:nth-child(2) {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.domestic {
+    width: 80%;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.domestic img {
+    width: 100%;
+}
+
+.domestic ul {
+    margin-right: 30px;
+
+}
+
+.domestic li:nth-child(2) {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 0 5px;
+}
+
+.domestic li:nth-child(3) {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.domestic li:nth-child(4) {
+    font-weight: bold;
+    font-size: 27px;
+    padding-top: 25px;
+}
+
+/* 혜택 이벤트*/
+.event h1 {
+    margin: 130px 0 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event span {
+    color: #f66a0d;
 }
 
 /* 푸터 */

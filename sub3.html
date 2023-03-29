@@ -1,13 +1,283 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./mainimages/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>유어저니</title>
+  <link rel="stylesheet" href="./sub3.css">
+  <!-- 이벤트 탭 -->
+  <link rel="stylesheet" href="./sub3css/sub3tab.css">
+
 </head>
+
 <body>
-  
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div class="nav1">
+        <ul>
+          <li><a href="./index.html">
+              <img src="./mainimages/logo.png" alt="로고 이미지"></a></li>
+          <li><a href="./sub1.html">해외여행</a>
+            <div class="sub"><!--서브메뉴 배경-->
+              <div>
+                <ul>
+                  <li><a href="#">유럽/아프리카</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">동남아</a></li>
+                  <li><a href="#">괌/사이판/호주/뉴질랜드</a></li>
+                  <li><a href="#">중앙아시아/몽골</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub2.html">국내여행</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">제주도</a></li>
+                  <li><a href="#">울릉도</a></li>
+                  <li><a href="#">홍도/흑산도</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub3.html">항공</a></li>
+          <li><a href="./sub4.html">허니문</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">몰디브</a></li>
+                  <li><a href="#">하와이</a></li>
+                  <li><a href="#">칸쿤</a></li>
+                  <li><a href="#">모리셔스</a></li>
+                  <li><a href="#">푸켓/코사무이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="./sub5.html">골프</a>
+            <div class="sub">
+              <div>
+                <ul>
+                  <li><a href="#">베트남</a></li>
+                  <li><a href="#">태국</a></li>
+                  <li><a href="#">필리핀</a></li>
+                  <li><a href="#">일본</a></li>
+                  <li><a href="#">괌/사이판/하와이</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#none">로그인</a></li>
+          <li><a href="#none">회원가입</a></li>
+          <li><a href="#none">예약/확인 결제</a></li>
+          <li><a href="#none">고객센터</a></li>
+        </ul>
+        <ul class="search">
+          <li><input type="search" placeholder="SEARCH"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 메인배너 -->
+  <div class="mainbanner">
+    <img src="./sub3images/mainbanner.jpg" alt="메인배너 이미지">
+  </div>
+  <!-- 콘텐츠-특가항공편 -->
+  <div class="special">
+    <h1><span>특가항공편</span>으로 여행 떠나자</h1>
+  </div>
+  <div class="special_inner">
+    <ul>
+      <li> <a href="#none"><img src="./sub3images/special1.jpg" alt="특가항공편 이미지1"> </a></li>
+      <li>[인천 ↔ 방콕]
+        왕복 항공권</li>
+      <li>#제주항공 특가</li>
+      <li>401,400원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/special2.jpg" alt="특가항공편 이미지2"></a></li>
+      <li>[인천 ↔ 라스베이거스]
+        왕복 항공권</li>
+      <li>#이코노미 특가</li>
+      <li>1,201,700원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/special3.jpg" alt="특가항공편 이미지3"></a></li>
+      <li>[인천 ↔ 타이베이]
+        왕복 항공권</li>
+      <li>#비즈니스 특가</li>
+      <li>751,000원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/special4.jpg" alt="특가항공편 이미지4"></a></li>
+      <li>[인천 ↔ 오사카]
+        왕복 항공권</li>
+      <li>#진에어 특가 </li>
+      <li>296,400원 ~</li>
+    </ul>
+    <!-- 기획 해외 항공편 -->
+  </div>
+  <div class="overseasbanner">
+    <a href="#none">
+      <ul>
+        <li>유어저니 추천 항공편으로 여행가자!</li>
+        <li>기획 해외 항공편</li>
+      </ul>
+    </a>
+  </div>
+  <div class="overseas">
+    <ul>
+      <li><a href="#none"><img src="./sub3images/overseas1.jpg" alt="기획 해외 항공편 이미지1"></a></li>
+      <li>[인천 ↔ 방콕] 왕복항공권 <br>
+        #잊지 못할 야시장</li>
+      <li>6월 출발</li>
+      <li>405,200원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/overseas2.jpg" alt="기획 해외 항공편 이미지2"></a></li>
+      <li>[인천 ↔ 오사카] 왕복항공권 <br>
+        #자유여행의 천국</li>
+      <li>5월 출발</li>
+      <li>276,600원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/overseas3.jpg" alt="기획 해외 항공편 이미지3"></a></li>
+      <li>[인천 ↔ 파리] 왕복항공권<br>
+        #낭만의 도시</li>
+      <li>11월 출발 </li>
+      <li>1,446,900원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/overseas4.jpg" alt="기획 해외 항공편 이미지4"></a></li>
+      <li>[인천 ↔ 하와이] 왕복항공권<br>
+        #허니문의 천국 </li>
+      <li>5월 출발</li>
+      <li>1,122,000원 ~</li>
+    </ul>
+  </div>
+  <!-- 기획 국내 항공편 -->
+  <div class="domesticbanner">
+    <a href="#none">
+      <ul>
+        <li>유어저니 추천 항공편으로 여행가자!</li>
+        <li>기획 해외 항공편</li>
+      </ul>
+    </a>
+  </div>
+  <div class="domestic">
+    <ul>
+      <li><a href="#none"><img src="./sub3images/domestic1.jpg" alt="기획 국내 항공편 이미지1"></a></li>
+      <li>[김포 ↔ 제주] <br>
+        #봄맞이 제주도 여행</li>
+      <li>3월 21일 출발 </li>
+      <li>32,000원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/domestic2.jpg" alt="기획 국내 항공편 이미지2"></a></li>
+      <li>[김포 ↔ 제주] <br>
+        #자연과 함께하는 제주</li>
+      <li>3월 22일 출발</li>
+      <li>43,300원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/domestic3.jpg" alt="기획 국내 항공편 이미지3"></a></li>
+      <li>[김포 ↔ 부산] <br>
+        #부산오이소, 식도락 여행</li>
+      <li>3월 29일 출발 </li>
+      <li>32,000원 ~</li>
+    </ul>
+    <ul>
+      <li><a href="#none"><img src="./sub3images/domestic4.jpg" alt="기획 국내 항공편 이미지4"></a></li>
+      <li>[김포 ↔ 여수] <br>
+        #돌산대교로 보는 여수 </li>
+      <li>3월 25일 출발 </li>
+      <li>51,300원 ~</li>
+    </ul>
+  </div>
+  <!-- 혜택 이벤트 -->
+  <div class="event">
+    <h1>유어저니만의 <span>혜택</span></h1>
+  </div>
+  <!--tab-->
+  <div class="tab">
+    <ul class="tabnav">
+      <li><a href="#tab01"><img src="./sub3images/minibanner2.jpg" alt="탭 배너 이미지2"></a></li>
+      <li><a href="#tab02"><img src="./sub3images/minibanner1.jpg" alt="탭 배너 이미지1"></a></li>
+      <li><a href="#tab03"><img src="./sub3images/minibanner3.jpg" alt="탭 배너 이미지3"></a></li>
+    </ul>
+    <div class="tabcontent">
+      <div id="tab01"><a href="#none"><img src="./sub3images/banner2.jpg" alt="이벤트 배너 이미지2"></a></div>
+      <div id="tab02"> <a href="#none"><img src="./sub3images/banner1.jpg" alt="이벤트 배너 이미지1"></a></div>
+      <div id="tab03"><a href="#none"><img src="./sub3images/banner3.jpg" alt="이벤트 배너 이미지3"></a></div>
+    </div>
+  </div>
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_inner">
+      <div class="footer_inner1">
+        <ul>
+          <li><a href="#none">여행정보</a></li>
+          <li><a href="#none">홍보센터</a></li>
+          <li><a href="#none">여행약관</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">기업/단체문의</a></li>
+          <li><a href="#none">대리점안내</a></li>
+          <li><a href="#none">신용카드 무이자 할부안내</a></li>
+          <li><a href="#none">유어저니 전화번호 안내</a></li>
+        </ul>
+        <ul>
+          <li><a href="#none"><img src="./mainimages/icon1.png" alt="소셜아이콘1"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon2.png" alt="소셜아이콘2"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon3.png" alt="소셜아이콘3"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon4.png" alt="소셜아이콘4"></a></li>
+          <li><a href="#none"><img src="./mainimages/icon5.png" alt="소셜아이콘5"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_inner2">
+      <ul>
+        <li class="bold">Address & Contact</li>
+        <li>대표번호: 0000-0000</li>
+        <li>부산광역시 중구 중앙대로 26 10층</li>
+      </ul>
+      <ul>
+        <li class="bold">유어저니 Information</li>
+        <li>(주)유어저니 대표: 손예진</li>
+        <li>본사 사업자등록번호: 000-00-00000</li>
+        <li>관광 사업자등록번호: 000-00-00000</li>
+        <li>통신판매업신고번호: 중구 00000호</li>
+      </ul>
+      <ul>
+        <li class="bold">Follow us</li>
+        <li>여행자 배상책임보험 15억원 가입</li>
+        <li>일반여행업보증금외 15억원 가입</li>
+        <li>yourjourney@journey.co.kr</li>
+      </ul>
+      <ul class="right">
+        <li>유어저니 문의하기</li>
+        <li><img src="./mainimages/icon6.png" alt="소셜아이콘6">유어저니 대표번호</li>
+        <li>0000-0000</li>
+        <li><a href="#none">문의별번호안내</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+        <li><a href="#none">1:1문의하기</a><img src="./mainimages/icon7.png" alt="소셜아이콘7"></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+  <!-- 서브메뉴 슬라이드 js -->
+  <script src="./script/submenu.js"></script>
+  <!--이벤트 탭js-->
+  <script src="script/tab.js"></script>
 </body>
+
 </html>
