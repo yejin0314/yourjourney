@@ -330,7 +330,11 @@ span {
 .event h1 {
     margin: 50px 0;
 }
-
+b{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: lighter;
+}
 /* 푸터 */
 footer {
     background-color: #ffb369;
