@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.gallery {
+	width: 1920px;
+	position: absolute;
+	left: 330px;
+	height: 429.66px;
+}
+
+.gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+.swiper-slide a {
+	display: block;
+	width: 90%;
+	margin: auto;
+	position: relative;
+    transition: all 1s;
+}
+
+.swiper-slide-active a {
+	width: 100%;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.gallery .swiper-pagination {
+	background-color: #a1a1a1;
+	top: auto;
+	bottom: -65px;
+	left: 13px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background-color: #000;
+}

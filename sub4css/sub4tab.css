@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 탭메뉴 꾸미기 */
+.tab {
+  min-width: 1520px;
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab_txt span {
+  color: #f66a0d;
+}
+
+.tab_txt {
+  line-height: 60px;
+}
+
+.tabnav {
+  width: 100%;
+}
+
+.tabnav li {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 53px;
+}
+
+/* 하얀박스 */
+.best_txt {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 25px 0;
+  text-align: left;
+  border-radius: 0 0 29px 29px;
+}
+.best_txt li:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.best_txt li:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.best_txt li:nth-child(3) {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.best_txt ul {
+  padding-left: 40px;
+}
+
+
+
+/* 탭 왼쪽 텍스트 */
+.besttxt {
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+.honeytxt {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 65px;
+}
+
+/* 탭 콘텐츠 */
+#tab01, #tab02, #tab03, #tab04 {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.best_inner {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.best_inner>li {
+  margin-left: 20px;
+}
+
+.best_inner img {
+  display: block;
+}
+
+#tab01 ul li a, #tab02 ul li a, #tab03 ul li a, #tab04 ul li a {
+  position: relative;
+  display: block;
+}
+/* 탭 위치 조정 */
+.middle{
+  padding-top: 150px;
+}
+.left{
+  padding-top: 50px;
+}
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+/* .tabnav li .active {} */
+
+.tabnav li a:hover,
+.tabnav li a.active {
+  color: #f66a0d;
+}
+
+/* 탭컨텐츠 꾸미기 */
+.tabcontent {
+  position: relative;
+}
