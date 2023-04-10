@@ -1,44 +1,72 @@
-*{margin: 0; padding: 0;}
-ul{list-style: none;}
-a{text-decoration: none; color: #000;}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* 탭메뉴 꾸미기 */
-.tabviedo{
-  width:600px; 
+.tabviedo {
+  width: 100%;
   overflow: hidden;
-}
-.tabviedo .tabnav{
-  width:600px; 
-  overflow: hidden;
-}
-.tabviedo .tabnav li{
-  float: left;
-}
-.tabviedo .tabnav li a{ 
-  display: block;
-  padding: 20px 40px;
-  border:1px solid #ddd;
-  border-bottom: 1px solid #7ea21e;
-  position: relative;
-  z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* 탭메뉴 클릭했을 때 변화 꾸미기 */
-.tabviedo .tabnav li .active{
-  border: 1px solid #7ea21e;
-  border-bottom: 1px solid #fff;
+.tabviedo .tabnav {
+  width: 38%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.tabviedo .tabnav li a:hover,
-.tabviedo .tabnav li a.active{
-  background:#fff; 
-  color:#7ea21e; 
+
+.tabviedo .tabnav li a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.tabviedo .tabnav li a img{
+  margin-right: 30px;
+}
+.tabviedo .tabnav li a span {
+  background-color: #f66a0d;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 12px;
+}
+
+.tabviedo .tabnav li a h6 {
+  line-height: 26px;
+  margin: 13px 0;
+  font-size: 16px;
+}
+
+.tabviedo .tabnav li a h4 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* 탭컨테츠 꾸미기 */
-.tabviedo .tabcontent{
-  padding: 20px; 
-  height:244px; 
-  border:1px solid #7ea21e; 
-  position: relative;
-  top: -1px;
+.tabviedo .tabcontent {
+  width: 59%;
+}
+
+.tabviedo .tabcontent video {
+  width: 100%;
 }

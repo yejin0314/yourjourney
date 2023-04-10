@@ -14,7 +14,8 @@ a {
 
 /* 탭메뉴 꾸미기 */
 .tab {
-  min-width: 1520px;
+  min-width: 1320px;
+  max-width: 1920px;
   width: 80%;
   overflow: hidden;
   margin: auto;
@@ -31,6 +32,7 @@ a {
 
 .tab_txt {
   line-height: 60px;
+  width: 15%;
 }
 
 .tabnav {
@@ -53,13 +55,15 @@ a {
   bottom: 0;
   padding: 25px 0;
   text-align: left;
-  border-radius: 0 0 29px 29px;
+  border-radius: 0 0 27px 27px;
 }
+
 .best_txt li:nth-child(1) {
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 15px;
 }
+
 .best_txt li:nth-child(2) {
   font-size: 16px;
   font-weight: 500;
@@ -93,7 +97,10 @@ a {
 }
 
 /* 탭 콘텐츠 */
-#tab01, #tab02, #tab03, #tab04 {
+#tab01,
+#tab02,
+#tab03,
+#tab04 {
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,33 +115,39 @@ a {
 }
 
 .best_inner>li {
-  margin-left: 20px;
+  margin-left: 2%;
+  width: 31.33%;
 }
 
 .best_inner img {
   display: block;
+  width: 100%;
 }
 
-#tab01 ul li a, #tab02 ul li a, #tab03 ul li a, #tab04 ul li a {
+#tab01 ul li a,
+#tab02 ul li a,
+#tab03 ul li a,
+#tab04 ul li a {
   position: relative;
   display: block;
 }
+
 /* 탭 위치 조정 */
-.middle{
+.middle {
   padding-top: 150px;
 }
-.left{
+
+.left {
   padding-top: 50px;
 }
-/* 탭메뉴 클릭했을 때 변화 꾸미기 */
-/* .tabnav li .active {} */
 
-.tabnav li a:hover,
-.tabnav li a.active {
+.best .tabnav li a:hover,
+.best .tabnav li a.active {
   color: #f66a0d;
 }
 
 /* 탭컨텐츠 꾸미기 */
 .tabcontent {
   position: relative;
+  width: 95%;
 }
