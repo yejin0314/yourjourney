@@ -277,7 +277,7 @@ header {
 
 .hot_txt {
     color: #fff;
-    min-width: 235px;
+    width: 20%;
 }
 
 .hot_txt>h1 {
@@ -293,9 +293,10 @@ header {
 
 .hot_inner {
     width: 80%;
+    min-width: 1320px;
     margin: auto;
     background: url(./sub2images/hot_background.jpg) no-repeat center;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     display: -moz-box;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -306,7 +307,6 @@ header {
 }
 
 .content {
-    min-width: 1150px;
     width: 80%;
     display: -moz-box;
     display: -webkit-box;
@@ -320,9 +320,12 @@ header {
 }
 
 .content>li {
-    padding: 0 20px 20px 0;
+    margin: 0 2% 2% 0;
+    width: 32%;
 }
-
+.content>li:nth-child(3n){
+    margin: 0 0% 2% 0;
+}
 .content_txt {
     padding: 20px 30px;
     width: 100%;
@@ -334,6 +337,7 @@ header {
 
 .content img {
     display: block;
+    width: 100%;
 }
 
 .content_txt li:nth-child(1) {

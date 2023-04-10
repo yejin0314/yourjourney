@@ -38,8 +38,9 @@ a {
 }
 .tabnav li .active{
   z-index: 3;
-  /* 그림자 삽입 */
 }
+  /* 그림자 삽입 */
+
 .tabnav li .active img{
   transform: scale(1.1);
 }
