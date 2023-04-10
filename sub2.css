@@ -169,9 +169,9 @@ header {
 }
 
 /* 메인배너 영상삽입 예정 */
-.mainbanner {
-    height: 876px;
-    background-color: #000;
+.mainbanner video{
+    height: 100%;
+    width: 100%;
 }
 
 /* 일자선택바 */
@@ -277,6 +277,7 @@ header {
 
 .hot_txt {
     color: #fff;
+    min-width: 235px;
 }
 
 .hot_txt>h1 {
@@ -294,7 +295,7 @@ header {
     width: 80%;
     margin: auto;
     background: url(./sub2images/hot_background.jpg) no-repeat center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: -moz-box;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,6 +306,7 @@ header {
 }
 
 .content {
+    min-width: 1150px;
     width: 80%;
     display: -moz-box;
     display: -webkit-box;
