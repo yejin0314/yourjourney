@@ -5,5 +5,5 @@ $(function(){
 		$('.tabnav a').removeClass('active');
 		$(this).addClass('active');
 		return false;
-	}).filter(':eq(0)').click();
+	}).filter(':eq(1)').click();
   });
