@@ -65,6 +65,13 @@ a {
 /* 탭컨테츠 꾸미기 */
 .tabviedo .tabcontent {
   width: 59%;
+  height: 494px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
 }
 
 .tabviedo .tabcontent video {

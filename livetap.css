@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* 탭메뉴 꾸미기 */
+  .tabviedo {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+  
+  .tabviedo .tabnav {
+    width: 38%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tabviedo .tabnav li a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .tabviedo .tabnav li a img{
+    margin-right: 30px;
+  }
+  .tabviedo .tabnav li a span {
+    background-color: #f66a0d;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 12px;
+  }
+  
+  .tabviedo .tabnav li a h6 {
+    line-height: 26px;
+    margin: 13px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .tabviedo .tabnav li a h4 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  /* 탭컨테츠 꾸미기 */
+  .tabviedo .tabcontent {
+    width: 59%;
+  }
+  
+  .tabviedo .tabcontent video {
+    width: 100%;
+  }
+  .tabnav div{
+    color: #fff;
+  }
