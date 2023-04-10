@@ -324,6 +324,7 @@ header {
 
 /* 콘텐츠_럭셔리 허니문 여행지 */
 .luxury {
+    min-width: 1320px;
     text-align: center;
     width: 80%;
     margin: 150px auto;
