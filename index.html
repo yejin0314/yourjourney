@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- 테마별 탭 -->
     <link rel="stylesheet" href="css/tab.css">
+    <!-- 라이브 영상 탭 -->
+    <link rel="stylesheet" href="./css/livetap.css">
 </head>
 
 <body>
@@ -25,7 +27,7 @@
             <div class="nav1">
                 <ul>
                     <li><a href="./index.html">
-                        <img src="./mainimages/logo.png" alt="로고 이미지"></a></li>
+                            <img src="./mainimages/logo.png" alt="로고 이미지"></a></li>
                     <li><a href="./sub1.html">해외여행</a>
                         <div class="sub"><!--서브메뉴 배경-->
                             <div>
@@ -439,43 +441,86 @@
         <h1>유어저니가 추천하는 'your journey'</h1>
         <ul>
             <li><a href="#none">
-                <div class="box">
-                    <img src="./mainimages/recommend1.png" alt="추천별 상품이미지1">
-                </div>
-                <h4>[코타키나발루재주꾼] 샹그릴라/탄중아루/ <br>
-                    호핑+반딧불+전신마사지 1시간 5일 </h4>
-                <h5>탄중아루 (탄중)씨뷰 무료UP! 호핑 <br>
-                    자유일정+선셋나이트투어 포함! <br>
-                    반딧불투어와 야시장까지</h5>
-                <p>679,000 <span class="small">원~</span></p>
-            </a></li>
+                    <div class="box">
+                        <img src="./mainimages/recommend1.png" alt="추천별 상품이미지1">
+                    </div>
+                    <h4>[코타키나발루재주꾼] 샹그릴라/탄중아루/ <br>
+                        호핑+반딧불+전신마사지 1시간 5일 </h4>
+                    <h5>탄중아루 (탄중)씨뷰 무료UP! 호핑 <br>
+                        자유일정+선셋나이트투어 포함! <br>
+                        반딧불투어와 야시장까지</h5>
+                    <p>679,000 <span class="small">원~</span></p>
+                </a></li>
             <li><a href="#none">
-                <div class="box">
-                    <img src="./mainimages/recommend2.png" alt="추천별 상품이미지2">
-                </div>
-                <h4>[찬란한 문명] 두바이+이집트 10일 <br>
-                    #전일정5성호텔 #나일강크루즈 [EY] HIT</h4>
-                <h5>★3/1, 11, 14, 18, 21~ 출발확정 ★ <br>
-                    두바이 1박 관광 포함 (모노레일/아브라/분수쇼), <br>
-                    전 일정 5성급호텔 + 5성급 나일강 크루즈 3박</h5>
-                <p>2,290,000 <span class="small">원~</span></p>
-            </a></li>
+                    <div class="box">
+                        <img src="./mainimages/recommend2.png" alt="추천별 상품이미지2">
+                    </div>
+                    <h4>[찬란한 문명] 두바이+이집트 10일 <br>
+                        #전일정5성호텔 #나일강크루즈 [EY] HIT</h4>
+                    <h5>★3/1, 11, 14, 18, 21~ 출발확정 ★ <br>
+                        두바이 1박 관광 포함 (모노레일/아브라/분수쇼), <br>
+                        전 일정 5성급호텔 + 5성급 나일강 크루즈 3박</h5>
+                    <p>2,290,000 <span class="small">원~</span></p>
+                </a></li>
             <li><a href="#none">
-                <div class="box">
-                    <img src="./mainimages/recommend3.png" alt="추천별 상품이미지3">
-                </div>
-                <h4>[SWEET, 스위스 & 이탈리아 9일] <br>
-                    2DAY(리기/돌로미테) #1급호텔 #알프스</h4>
-                <h5>2대 알프스 (스위스 리기 클래식열차탑승 & <br>
-                    이탈리아 돌로미테와 미주리나 호수) <br>
-                    2대 인생여행지 (이탈리아 아말피 & 포지타노)</h5>
-                <p>2,190,000 <span class="small">원~</span></p>
-            </a></li>
+                    <div class="box">
+                        <img src="./mainimages/recommend3.png" alt="추천별 상품이미지3">
+                    </div>
+                    <h4>[SWEET, 스위스 & 이탈리아 9일] <br>
+                        2DAY(리기/돌로미테) #1급호텔 #알프스</h4>
+                    <h5>2대 알프스 (스위스 리기 클래식열차탑승 & <br>
+                        이탈리아 돌로미테와 미주리나 호수) <br>
+                        2대 인생여행지 (이탈리아 아말피 & 포지타노)</h5>
+                    <p>2,190,000 <span class="small">원~</span></p>
+                </a></li>
         </ul>
     </div>
     <!--콘텐츠-라이브별-->
     <div class="live">
-
+        <div class="live_inner">
+            <h1>오직 방송에서만 진행하는 특가 & 혜택</h1>
+            <img src="./mainimages/logolive.png" alt="유어저니 라이브 로고 이미지">
+            <!--tab-->
+            <div class="tabviedo">
+                <div class="tabcontent">
+                    <div id="tab01"><video src="./video/italy.mp4" autoplay muted loop></video></div>
+                    <div id="tab02"><video src="./video/japan.mp4" autoplay muted loop></video></div>
+                    <div id="tab03"><video src="./video/guam.mp4" autoplay muted loop></video></div>
+                </div>
+                <ul class="tabnav">
+                    <li><a href="#tab01">
+                            <img src="./mainimages/italylive.jpg" alt="이탈리아 탭 이미지1">
+                            <div>
+                                <span>BEST</span>
+                                <h6>[완전핫딜] 이탈리아 10일 <br>
+                                    #베네치아 #5일 자유여행 <br>
+                                    #호텔업그레이드 </h6>
+                                <h4>3,691,000원</h4>
+                            </div>
+                        </a></li>
+                    <li><a href="#tab02">
+                            <img src="./mainimages/japanlive.jpg" alt="일본 탭 이미지1">
+                            <div>
+                                <span>BEST</span>
+                                <h6>[특가진행] 일본 4박 5일<br>
+                                    #도쿄 #3일 자유여행<br>
+                                    #먹거리 투어</h6>
+                                <h4>670,000원</h4>
+                            </div>
+                        </a></li>
+                    <li><a href="#tab03">
+                            <img src="./mainimages/guamlive.jpg" alt="괌 탭 이미지1">
+                            <div>
+                                <span>BEST</span>
+                                <h6>[허니문투어] 괌 6박 8일<br>
+                                    #크라운플라자 #오션뷰<br>
+                                    #자유여행 #호텔조식</h6>
+                                <h4>1,920,000원</h4>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!--콘텐츠-정보-->
     <div class="information">

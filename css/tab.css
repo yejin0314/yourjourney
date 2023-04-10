@@ -1,46 +1,63 @@
-*{margin: 0; padding: 0;}
-ul{list-style: none;}
-a{text-decoration: none; color: #000;}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* 탭메뉴 꾸미기 */
-.tab{
-  width:100%; 
+.thema .tab {
+  width: 100%;
   overflow: hidden;
 }
-.tabnav{
-  width:100%; 
+
+.thema .tabnav {
+  width: 100%;
   overflow: hidden;
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
-.tabnav li a{ 
+
+.thema .tabnav li a {
   display: block;
   padding: 80px 100px 30px;
   position: relative;
   z-index: 2;
   color: rgba(0, 0, 0, 0.3);
 }
+
 /* 탭메뉴 클릭했을 때 변화 꾸미기 */
-.tabnav li .active{
+.thema .tabnav li .active {
   color: #f66a0d;
 }
-.tabnav li a:hover,
-.tabnav li a.active{
-  color: #f66a0d; 
+
+.thema .tabnav li a:hover,
+.thema .tabnav li a.active {
+  color: #f66a0d;
 }
+
 /* 탭컨텐츠 꾸미기 */
-.tabcontent{
+.thema .tabcontent {
   position: relative;
   top: -1px;
 }
-.tabnav a{
+
+.thema .tabnav a {
   font-size: 25px;
   font-weight: 600;
 }
-.theme_txt{
+
+.theme_txt {
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   text-align: center;
@@ -51,72 +68,85 @@ a{text-decoration: none; color: #000;}
   padding: 25px 0;
   text-align: left;
 }
-.theme_txt ul{
+
+.theme_txt ul {
   padding-left: 40px;
 }
-.theme_txt li:nth-child(1){
+
+.theme_txt li:nth-child(1) {
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-.theme_txt li:nth-child(3){
+
+.theme_txt li:nth-child(3) {
   font-size: 25px;
   font-weight: bold;
   padding-top: 20px;
 }
-.wait{
+
+.wait {
   height: 513px;
   width: 1583px;
   background-color: #d4d4d4;
 }
-.wait h3{
+
+.wait h3 {
   padding-top: 256.5px;
 }
+
 /* 탭1 자유여행 */
-#tab01{
+#tab01 {
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: left;
 }
-.theme_inner{
+
+.theme_inner {
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: left;
   position: relative;
 }
-.theme_inner> li{
+
+.theme_inner>li {
   margin-right: 58px;
   position: relative;
 }
-#tab01> ul:nth-child(1)> li {
+
+#tab01>ul:nth-child(1)>li {
   border-bottom: 3px solid #d4d4d4;
   width: 155px;
   margin-right: 70px;
 }
-#tab01 ul:nth-child(1) li a{
+
+#tab01 ul:nth-child(1) li a {
   display: block;
   padding: 30px 0;
   font-size: 17px;
   font-weight: 500;
 }
+
 /* 탭2 추천인기여행 */
-#tab02{
+#tab02 {
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: left;
 }
-#tab02> ul:nth-child(1)> li {
+
+#tab02>ul:nth-child(1)>li {
   border-bottom: 3px solid #d4d4d4;
   width: 155px;
   margin-right: 70px;
 }
-#tab02 ul:nth-child(1) li a{
+
+#tab02 ul:nth-child(1) li a {
   display: block;
   padding: 30px 0;
   font-size: 17px;
@@ -124,25 +154,31 @@ a{text-decoration: none; color: #000;}
 }
 
 /* 탭3 추천인기여행 */
-#tab03{
+#tab03 {
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: left;
 }
-#tab03> ul:nth-child(1)> li {
+
+#tab03>ul:nth-child(1)>li {
   border-bottom: 3px solid #d4d4d4;
   width: 155px;
   margin-right: 70px;
 }
-#tab03 ul:nth-child(1) li a{
+
+#tab03 ul:nth-child(1) li a {
   display: block;
   padding: 30px 0;
   font-size: 17px;
   font-weight: 500;
 }
+
 /* 사라지는 효과 */
-.d, .e, .n, .g{
+.d,
+.e,
+.n,
+.g {
   display: none;
 }

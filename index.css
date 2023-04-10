@@ -326,9 +326,29 @@ span {
 /* 콘텐츠-라이브별 */
 .live {
     background-color: #205375;
-    width: 100%;
-    height: 784px;
-    margin: 107px 0 auto;
+    margin-top: 150px;
+}
+
+.live_inner {
+    min-width: 1320px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.live h1 {
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+    padding: 65px 0 20px;
+}
+
+.live_inner> img {
+    padding-bottom: 30px;
+}
+
+.live span {
+    color: #f66a0d;
 }
 
 /* 콘텐츠-정보 */
